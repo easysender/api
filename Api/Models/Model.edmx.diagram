@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6304986caecc4b90893947fec2ec27f5" Name="Diagram1">
+        <EntityTypeShape EntityType="ApiH2HModel.Bulletins" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiH2HModel.operationFeatures" Width="1.5" PointX="8.625" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiH2HModel.Operations" Width="1.5" PointX="6.625" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiH2HModel.Property" Width="1.5" PointX="3.625" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiH2HModel.Senders" Width="1.5" PointX="5.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiH2HModel.SendersUsers" Width="1.5" PointX="2.25" PointY="26.875" IsExpanded="true" />
+        <AssociationConnector Association="ApiH2HModel.FK_operationFeatures_Operations" ManuallyRouted="false" />
+        <AssociationConnector Association="ApiH2HModel.FK_Senders_Operations" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ApiH2HModel.Users" Width="1.5" PointX="2.25" PointY="11.25" />
+        <AssociationConnector Association="ApiH2HModel.FK_Operations_Users" />
+        <AssociationConnector Association="ApiH2HModel.FK_Users_Property" />
+        <AssociationConnector Association="ApiH2HModel.FK_SendersUsers_Users" />
+        <EntityTypeShape EntityType="ApiH2HModel.Names" Width="1.5" PointX="7" PointY="26.625" />
+        <AssociationConnector Association="ApiH2HModel.FK_Names_Operations" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
