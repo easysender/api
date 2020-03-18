@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApiH2HModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bulletins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namesId" Type="Int32" Nullable="false" />
+    <Property Name="NumeroContoCorrente" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IntestatoA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FormatoStampa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Template" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AdditionalInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IBAN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CodiceCliente" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ImportoEuro" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="EseguitoDaNominativo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EseguitoDaIndirizzo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EseguitoDaCAP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EseguitoDaLocalita" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Causale" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BulletinType" Type="Int32" Nullable="false" />
+    <Property Name="namesListsId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="operationFeatures">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="operationId" Type="Int32" Nullable="false" />
+    <Property Name="featureType" Type="String" MaxLength="550" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="featureValue" Type="String" MaxLength="550" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Operations" Relationship="Self.FK_operationFeatures_Operations" FromRole="operationFeatures" ToRole="Operations" />
+  </EntityType>
+  <EntityType Name="Operations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="userId" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="operationType" Type="Int32" Nullable="false" />
+    <Property Name="demoOperation" Type="Boolean" Nullable="false" />
+    <Property Name="complete" Type="Boolean" Nullable="false" />
+    <Property Name="userParentId" Type="Int32" />
+    <Property Name="areaTestOperation" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="operationFeatures" Relationship="Self.FK_operationFeatures_Operations" FromRole="Operations" ToRole="operationFeatures" />
+    <NavigationProperty Name="Senders" Relationship="Self.FK_Senders_Operations" FromRole="Operations" ToRole="Senders" />
+    <NavigationProperty Name="Users" Relationship="ApiH2HModel.FK_Operations_Users" FromRole="Operations" ToRole="Users" />
+    <NavigationProperty Name="Names" Relationship="ApiH2HModel.FK_Names_Operations" FromRole="Operations" ToRole="Names" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="ApiH2HModel.FK_Users_Property" FromRole="Property" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Senders">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="surname" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="businessName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dug" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="houseNumber" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="cap" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="city" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="province" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="state" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="operationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Operations" Relationship="Self.FK_Senders_Operations" FromRole="Senders" ToRole="Operations" />
+  </EntityType>
+  <EntityType Name="SendersUsers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="surname" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="businessName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dug" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="houseNumber" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="cap" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="city" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="province" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="state" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="userId" Type="Int32" Nullable="false" />
+    <Property Name="userParentId" Type="Int32" />
+    <Property Name="temporary" Type="Boolean" />
+    <NavigationProperty Name="Users" Relationship="ApiH2HModel.FK_SendersUsers_Users" FromRole="SendersUsers" ToRole="Users" />
+  </EntityType>
+  <Association Name="FK_operationFeatures_Operations">
+    <End Role="Operations" Type="Self.Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="operationFeatures" Type="Self.operationFeatures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operationFeatures">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Senders_Operations">
+    <End Role="Operations" Type="Self.Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Senders" Type="Self.Senders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Senders">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bulletins" EntityType="Self.Bulletins" />
+    <EntitySet Name="operationFeatures" EntityType="Self.operationFeatures" />
+    <EntitySet Name="Operations" EntityType="Self.Operations" />
+    <EntitySet Name="Property" EntityType="Self.Property" />
+    <EntitySet Name="Senders" EntityType="Self.Senders" />
+    <EntitySet Name="SendersUsers" EntityType="Self.SendersUsers" />
+    <AssociationSet Name="FK_operationFeatures_Operations" Association="Self.FK_operationFeatures_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="operationFeatures" EntitySet="operationFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Senders_Operations" Association="Self.FK_Senders_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="Senders" EntitySet="Senders" />
+    </AssociationSet>
+    <EntitySet Name="Users" EntityType="ApiH2HModel.Users" />
+    <AssociationSet Name="FK_Operations_Users" Association="ApiH2HModel.FK_Operations_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Operations" EntitySet="Operations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Property" Association="ApiH2HModel.FK_Users_Property">
+      <End Role="Property" EntitySet="Property" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SendersUsers_Users" Association="ApiH2HModel.FK_SendersUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SendersUsers" EntitySet="SendersUsers" />
+    </AssociationSet>
+    <EntitySet Name="Names" EntityType="ApiH2HModel.Names" />
+    <AssociationSet Name="FK_Names_Operations" Association="ApiH2HModel.FK_Names_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="Names" EntitySet="Names" />
+    </AssociationSet>
+  </EntityContainer>
+  <EnumType Name="operationType">
+    <Member Name="ROL" Value="1" />
+    <Member Name="LOL" Value="2" />
+    <Member Name="TELEGRAMMA" Value="3" />
+    <Member Name="MOL" Value="4" />
+    <Member Name="COL" Value="5" />
+  </EnumType>
+  <EnumType Name="bulletinType">
+    <Member Name="Bollettino451" Value="1" />
+    <Member Name="Bollettino674" Value="2" />
+    <Member Name="Bollettino896" Value="3" />
+  </EnumType>
+  <EnumType Name="currentState">
+    <Member Name="inAttesa" Value="0" />
+    <Member Name="PresoInCarico" Value="1" />
+    <Member Name="InLavorazione" Value="2" />
+    <Member Name="Spedito" Value="3" />
+    <Member Name="Annullato" Value="4" />
+    <Member Name="ErroreSubmit" Value="5" />
+    <Member Name="ErroreValorizza" Value="6" />
+    <Member Name="ErroreConfirm" Value="7" />
+    <Member Name="Postalizzato" Value="8" />
+  </EnumType>
+  <EnumType Name="fronteRetro">
+    <Member Name="fronte" Value="0" />
+    <Member Name="fronteRetro" Value="1" />
+  </EnumType>
+  <EnumType Name="notificationType">
+    <Member Name="communication" Value="1" />
+    <Member Name="notification" Value="2" />
+  </EnumType>
+  <EnumType Name="paymentMethod">
+    <Member Name="carte" Value="1" />
+    <Member Name="bonifico" />
+    <Member Name="payPal" />
+  </EnumType>
+  <EnumType Name="products">
+    <Member Name="CartoPlus10SC" Value="1" />
+    <Member Name="CartoPlusLGRidotto" />
+    <Member Name="CartoPlusLG" />
+    <Member Name="CartolinaA5" />
+    <Member Name="CartolinaA6" />
+  </EnumType>
+  <EnumType Name="recipientsType">
+    <Member Name="newList" Value="1" />
+    <Member Name="existentList" />
+    <Member Name="requestList" />
+  </EnumType>
+  <EnumType Name="ricevutaRitorno">
+    <Member Name="no" Value="0" />
+    <Member Name="si" Value="1" />
+  </EnumType>
+  <EnumType Name="state">
+    <Member Name="preControlError" Value="0" />
+    <Member Name="preControlValid" Value="1" />
+    <Member Name="valid" Value="2" />
+    <Member Name="error" Value="3" />
+  </EnumType>
+  <EnumType Name="tipoStampa">
+    <Member Name="colori" Value="0" />
+    <Member Name="biancoNero" Value="1" />
+  </EnumType>
+  <EnumType Name="userType">
+    <Member Name="Master" Value="1" />
+    <Member Name="Sub" Value="2" />
+  </EnumType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usernamePoste" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="pwdPoste" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="porpertyId" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="lastName" Type="String" Nullable="false" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="userType" Type="Int32" Nullable="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="guidUser" Type="Guid" Nullable="false" />
+    <Property Name="businessName" Type="String" Nullable="false" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="baseUrl" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="pwd" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="cap" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="province" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mobile" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="demoUser" Type="Boolean" Nullable="false" />
+    <Property Name="parentId" Type="Int32" Nullable="false" />
+    <Property Name="sendersId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="usernamePosteAreaTest" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="pwdPosteAreaTest" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="areaTestUser" Type="Boolean" Nullable="false" />
+    <Property Name="molCol" Type="Boolean" />
+    <Property Name="CodiceContrattoMOL" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="CodiceContrattoCOL" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Operations" Relationship="ApiH2HModel.FK_Operations_Users" FromRole="Users" ToRole="Operations" />
+    <NavigationProperty Name="Property" Relationship="ApiH2HModel.FK_Users_Property" FromRole="Users" ToRole="Property" />
+    <NavigationProperty Name="SendersUsers" Relationship="ApiH2HModel.FK_SendersUsers_Users" FromRole="Users" ToRole="SendersUsers" />
+  </EntityType>
+  <Association Name="FK_Operations_Users">
+    <End Type="ApiH2HModel.Users" Role="Users" Multiplicity="1" />
+    <End Type="ApiH2HModel.Operations" Role="Operations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Operations">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Property">
+    <End Type="ApiH2HModel.Property" Role="Property" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApiH2HModel.Users" Role="Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="porpertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SendersUsers_Users">
+    <End Type="ApiH2HModel.Users" Role="Users" Multiplicity="1" />
+    <End Type="ApiH2HModel.SendersUsers" Role="SendersUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SendersUsers">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Names">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="businessName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="complementNames" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="complementAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dug" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="houseNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cap" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="province" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="state" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="insertDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="currentState" Type="Int32" Nullable="false" />
+    <Property Name="valid" Type="Boolean" Nullable="false" />
+    <Property Name="operationId" Type="Int32" Nullable="false" />
+    <Property Name="requestId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="orderId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="codice" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="vatPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="totalPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="attachedFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="fileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="presaInCaricoDate" Type="DateTime" Precision="3" />
+    <Property Name="consegnatoDate" Type="DateTime" Precision="3" />
+    <Property Name="stato" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="guidUser" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="tipoStampa" Type="Boolean" />
+    <Property Name="fronteRetro" Type="Boolean" />
+    <Property Name="ricevutaRitorno" Type="Boolean" />
+    <Property Name="locked" Type="Boolean" Nullable="false" />
+    <Property Name="reSendGuid" Type="Guid" />
+    <Property Name="fiscalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Operations" Relationship="ApiH2HModel.FK_Names_Operations" FromRole="Names" ToRole="Operations" />
+  </EntityType>
+  <Association Name="FK_Names_Operations">
+    <End Type="ApiH2HModel.Operations" Role="Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApiH2HModel.Names" Role="Names" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Names">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

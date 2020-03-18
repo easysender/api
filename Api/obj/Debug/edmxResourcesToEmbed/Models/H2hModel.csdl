@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="H2HModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Accessi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LocationAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdProprieta" Type="Int32" />
+    <Property Name="IdCliente" Type="Int32" />
+    <Property Name="IdUser" Type="Int32" />
+    <Property Name="Data" Type="DateTime" Precision="0" />
+    <Property Name="Ora" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AnagraficaUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cognome" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Indirizzo" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RagioneSociale" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PartitaIva" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stato" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Provincia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Citta" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_AnagraficaUsers_AnagraficaUsers" FromRole="AnagraficaUsers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="CategorieProdotti">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Categoria" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Padre" Type="Int32" />
+    <Property Name="Posizione" Type="Int32" />
+    <Property Name="Visibile" Type="Boolean" />
+    <NavigationProperty Name="Operazioni" Relationship="H2HModel.CategorieProdottiOperazioni" FromRole="CategorieProdotti" ToRole="Operazioni" />
+  </EntityType>
+  <EntityType Name="CorrezioneCap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cap" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="SiglaProvincia" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DestinatariLista">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Cognome" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Indirizzo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cap" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Citta" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Provincia" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="Stato" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdUser" Type="Int32" />
+    <Property Name="RagioneSociale" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdProprieta" Type="Int32" />
+    <Property Name="IdLista" Type="Int32" />
+    <Property Name="CodiceFiscale" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ListeDestinatari" Relationship="Self.FK_DestinatariLista_ListeDestinatari" FromRole="DestinatariLista" ToRole="ListeDestinatari" />
+  </EntityType>
+  <EntityType Name="FileDestinatari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdDestinatarioLista" Type="Int32" />
+    <Property Name="NomeFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sessionOperazione" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdUser" Type="Int32" />
+    <Property Name="IdProprieta" Type="Int32" />
+    <Property Name="PathFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Stato" Type="Int32" />
+  </EntityType>
+  <EntityType Name="FormElementiAggiuntivi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProdotto" Type="Int32" />
+    <Property Name="NomeForm" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Visibile" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ListeDestinatari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeLista" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Attiva" Type="Boolean" />
+    <Property Name="DataCreazione" Type="DateTime" Precision="3" />
+    <Property Name="IdProprieta" Type="Int32" />
+    <Property Name="IdUser" Type="Int32" />
+    <NavigationProperty Name="DestinatariLista" Relationship="Self.FK_DestinatariLista_ListeDestinatari" FromRole="ListeDestinatari" ToRole="DestinatariLista" />
+  </EntityType>
+  <EntityType Name="Mittenti">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Cognome" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Indirizzo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cap" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Citta" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Provincia" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="Stato" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdUser" Type="Int32" />
+    <Property Name="RagioneSociale" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdProprieta" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Nominativi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="Cognome" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="Indirizzo" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Cap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Citta" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Provincia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Stato" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="IdFile" Type="Int32" />
+    <Property Name="Categoria" Type="Int32" />
+    <Property Name="DataInserimento" Type="DateTime" Precision="3" />
+    <Property Name="IdUser" Type="Int32" />
+    <Property Name="StatoCorrente" Type="Int32" />
+    <Property Name="Valido" Type="Boolean" />
+    <Property Name="IdOperazione" Type="Int32" />
+    <Property Name="IdTelegramma" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Testo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ErroreMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdLista" Type="Int32" />
+    <Property Name="IdDestinatario" Type="Int32" />
+    <NavigationProperty Name="Operazioni" Relationship="Self.FK_Nominativi_Operazioni" FromRole="Nominativi" ToRole="Operazioni" />
+    <NavigationProperty Name="UploadedFiles" Relationship="Self.FK_Nominativi_UploadedFiles" FromRole="Nominativi" ToRole="UploadedFiles" />
+    <NavigationProperty Name="OperazioniStatoNominativi" Relationship="Self.FK_OperazioniStatoNominativi_Nominativi" FromRole="Nominativi" ToRole="OperazioniStatoNominativi" />
+  </EntityType>
+  <EntityType Name="Operazioni">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdFile" Type="Int32" Nullable="false" />
+    <Property Name="Categoria" Type="Int32" Nullable="false" />
+    <Property Name="IdRequest" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StatoOperazioneGenerale" Type="Int32" Nullable="false" />
+    <Property Name="CostoSpedizione" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="CostoStampa" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="CostoIva" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="GuidMessage" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DataRichiesta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IdOrder" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdMittente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdProprieta" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Nominativi" Relationship="Self.FK_Nominativi_Operazioni" FromRole="Operazioni" ToRole="Nominativi" />
+    <NavigationProperty Name="StatoOperazioneGenerale1" Relationship="Self.FK_Operazioni_StatoOperazioneGenerale" FromRole="Operazioni" ToRole="StatoOperazioneGenerale" />
+    <NavigationProperty Name="UploadedFiles" Relationship="Self.FK_Operazioni_UploadedFiles" FromRole="Operazioni" ToRole="UploadedFiles" />
+    <NavigationProperty Name="CategorieProdotti" Relationship="H2HModel.CategorieProdottiOperazioni" FromRole="Operazioni" ToRole="CategorieProdotti" />
+  </EntityType>
+  <EntityType Name="OperazioniStatoNominativi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stato" Type="Int32" />
+    <Property Name="Nominativo" Type="Int32" />
+    <Property Name="DataOperazione" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Nominativi" Relationship="Self.FK_OperazioniStatoNominativi_Nominativi" FromRole="OperazioniStatoNominativi" ToRole="Nominativi" />
+    <NavigationProperty Name="StatoNominativi" Relationship="Self.FK_OperazioniStatoNominativi_StatoNominativi" FromRole="OperazioniStatoNominativi" ToRole="StatoNominativi" />
+  </EntityType>
+  <EntityType Name="Proprieta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GuidProprieta" Type="Guid" Nullable="false" />
+    <Property Name="NomeProprieta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Indirizzo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Citta" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pwd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SettingUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUser" Type="Int32" />
+  </EntityType>
+  <EntityType Name="StatoNominativi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="StatoNominativo" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Codice" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DescrizioneCodice" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="TitoloCodice" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Visibile" Type="Boolean" />
+    <Property Name="InfoStato" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OperazioniStatoNominativi" Relationship="Self.FK_OperazioniStatoNominativi_StatoNominativi" FromRole="StatoNominativi" ToRole="OperazioniStatoNominativi" />
+  </EntityType>
+  <EntityType Name="StatoOperazioneGenerale">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Stato" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InfoStato" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TipologiaStato" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VisibileFiltro" Type="Boolean" Nullable="false" />
+    <Property Name="StatoPerUtente" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Operazioni" Relationship="Self.FK_Operazioni_StatoOperazioneGenerale" FromRole="StatoOperazioneGenerale" ToRole="Operazioni" />
+    <NavigationProperty Name="StatoOperazioneGenerale1" Relationship="Self.FK_StatoOperazioneGenerale_StatoOperazioneGenerale" FromRole="StatoOperazioneGenerale" ToRole="StatoOperazioneGenerale1" />
+    <NavigationProperty Name="StatoOperazioneGenerale2" Relationship="Self.FK_StatoOperazioneGenerale_StatoOperazioneGenerale" FromRole="StatoOperazioneGenerale1" ToRole="StatoOperazioneGenerale" />
+  </EntityType>
+  <EntityType Name="TipoUtente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipoUtente1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CreazioneUtenti" Type="Boolean" />
+    <Property Name="InvioRLT" Type="Boolean" />
+    <Property Name="VisualizzazioneRTL" Type="Boolean" />
+    <Property Name="VisualizzazioneStoricoRTL" Type="Boolean" />
+    <Property Name="CreazioneMittenti" Type="Boolean" />
+    <Property Name="CreazioneListe" Type="Boolean" />
+    <NavigationProperty Name="Users" Relationship="H2HModel.TipoUtenteUsers" FromRole="TipoUtente" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UploadedFiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PathFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdUser" Type="Int32" />
+    <Property Name="DataInserimento" Type="DateTime" Precision="3" />
+    <Property Name="Categoria" Type="Int32" />
+    <Property Name="CostoSpedizione" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Stato" Type="Int32" />
+    <Property Name="CostoStampa" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="CostoIva" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="NumeroFileCreati" Type="Int32" />
+    <Property Name="NumeroFileCorretti" Type="Int32" />
+    <Property Name="NumeroFileErrati" Type="Int32" />
+    <Property Name="IdRequest" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="IdProprieta" Type="Int32" />
+    <Property Name="Testo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Template" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Nominativi" Relationship="Self.FK_Nominativi_UploadedFiles" FromRole="UploadedFiles" ToRole="Nominativi" />
+    <NavigationProperty Name="Operazioni" Relationship="Self.FK_Operazioni_UploadedFiles" FromRole="UploadedFiles" ToRole="Operazioni" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pwd" Type="Binary" MaxLength="100" FixedLength="false" Nullable="false" />
+    <Property Name="GuidCode" Type="Guid" Nullable="false" />
+    <Property Name="TipoUtente" Type="Int32" Nullable="false" />
+    <Property Name="Attivo" Type="Boolean" Nullable="false" />
+    <Property Name="Registrato" Type="Boolean" Nullable="false" />
+    <Property Name="DataInserimento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IdPadre" Type="Int32" Nullable="false" />
+    <Property Name="IdProprieta" Type="Int32" Nullable="false" />
+    <Property Name="Mittenti" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AnagraficaUsers" Relationship="Self.FK_AnagraficaUsers_AnagraficaUsers" FromRole="Users" ToRole="AnagraficaUsers" />
+    <NavigationProperty Name="TipoUtente1" Relationship="H2HModel.TipoUtenteUsers" FromRole="Users" ToRole="TipoUtente" />
+  </EntityType>
+  <EntityType Name="DestinatariProvvisori">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdDestinatario" Type="Int32" />
+    <Property Name="sessionOperazione" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdUser" Type="Int32" />
+    <Property Name="IdProprieta" Type="Int32" />
+    <Property Name="variables" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="valori" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StatoFile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatoFile1" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_AnagraficaUsers_AnagraficaUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnagraficaUsers" Type="Self.AnagraficaUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AnagraficaUsers">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DestinatariLista_ListeDestinatari">
+    <End Role="ListeDestinatari" Type="Self.ListeDestinatari" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DestinatariLista" Type="Self.DestinatariLista" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListeDestinatari">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DestinatariLista">
+        <PropertyRef Name="IdLista" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nominativi_Operazioni">
+    <End Role="Operazioni" Type="Self.Operazioni" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Nominativi" Type="Self.Nominativi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operazioni">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Nominativi">
+        <PropertyRef Name="IdOperazione" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nominativi_UploadedFiles">
+    <End Role="UploadedFiles" Type="Self.UploadedFiles" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Nominativi" Type="Self.Nominativi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UploadedFiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Nominativi">
+        <PropertyRef Name="IdFile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OperazioniStatoNominativi_Nominativi">
+    <End Role="Nominativi" Type="Self.Nominativi" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OperazioniStatoNominativi" Type="Self.OperazioniStatoNominativi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nominativi">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OperazioniStatoNominativi">
+        <PropertyRef Name="Nominativo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Operazioni_StatoOperazioneGenerale">
+    <End Role="StatoOperazioneGenerale" Type="Self.StatoOperazioneGenerale" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Operazioni" Type="Self.Operazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatoOperazioneGenerale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operazioni">
+        <PropertyRef Name="StatoOperazioneGenerale" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Operazioni_UploadedFiles">
+    <End Role="UploadedFiles" Type="Self.UploadedFiles" Multiplicity="1" />
+    <End Role="Operazioni" Type="Self.Operazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UploadedFiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operazioni">
+        <PropertyRef Name="IdFile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OperazioniStatoNominativi_StatoNominativi">
+    <End Role="StatoNominativi" Type="Self.StatoNominativi" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OperazioniStatoNominativi" Type="Self.OperazioniStatoNominativi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatoNominativi">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OperazioniStatoNominativi">
+        <PropertyRef Name="Stato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatoOperazioneGenerale_StatoOperazioneGenerale">
+    <End Role="StatoOperazioneGenerale" Type="Self.StatoOperazioneGenerale" Multiplicity="1" />
+    <End Role="StatoOperazioneGenerale1" Type="Self.StatoOperazioneGenerale" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="StatoOperazioneGenerale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StatoOperazioneGenerale1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="H2HEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accessi" EntityType="Self.Accessi" />
+    <EntitySet Name="AnagraficaUsers" EntityType="Self.AnagraficaUsers" />
+    <EntitySet Name="CategorieProdotti" EntityType="Self.CategorieProdotti" />
+    <EntitySet Name="CorrezioneCap" EntityType="Self.CorrezioneCap" />
+    <EntitySet Name="DestinatariLista" EntityType="Self.DestinatariLista" />
+    <EntitySet Name="FileDestinatari" EntityType="Self.FileDestinatari" />
+    <EntitySet Name="FormElementiAggiuntivi" EntityType="Self.FormElementiAggiuntivi" />
+    <EntitySet Name="ListeDestinatari" EntityType="Self.ListeDestinatari" />
+    <EntitySet Name="Mittenti" EntityType="Self.Mittenti" />
+    <EntitySet Name="Nominativi" EntityType="Self.Nominativi" />
+    <EntitySet Name="Operazioni" EntityType="Self.Operazioni" />
+    <EntitySet Name="OperazioniStatoNominativi" EntityType="Self.OperazioniStatoNominativi" />
+    <EntitySet Name="Proprieta" EntityType="Self.Proprieta" />
+    <EntitySet Name="SettingUsers" EntityType="Self.SettingUsers" />
+    <EntitySet Name="StatoNominativi" EntityType="Self.StatoNominativi" />
+    <EntitySet Name="StatoOperazioneGenerale" EntityType="Self.StatoOperazioneGenerale" />
+    <EntitySet Name="TipoUtente" EntityType="Self.TipoUtente" />
+    <EntitySet Name="UploadedFiles" EntityType="Self.UploadedFiles" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="DestinatariProvvisori" EntityType="Self.DestinatariProvvisori" />
+    <EntitySet Name="StatoFile" EntityType="Self.StatoFile" />
+    <AssociationSet Name="FK_AnagraficaUsers_AnagraficaUsers" Association="Self.FK_AnagraficaUsers_AnagraficaUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AnagraficaUsers" EntitySet="AnagraficaUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DestinatariLista_ListeDestinatari" Association="Self.FK_DestinatariLista_ListeDestinatari">
+      <End Role="ListeDestinatari" EntitySet="ListeDestinatari" />
+      <End Role="DestinatariLista" EntitySet="DestinatariLista" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nominativi_Operazioni" Association="Self.FK_Nominativi_Operazioni">
+      <End Role="Operazioni" EntitySet="Operazioni" />
+      <End Role="Nominativi" EntitySet="Nominativi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nominativi_UploadedFiles" Association="Self.FK_Nominativi_UploadedFiles">
+      <End Role="UploadedFiles" EntitySet="UploadedFiles" />
+      <End Role="Nominativi" EntitySet="Nominativi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OperazioniStatoNominativi_Nominativi" Association="Self.FK_OperazioniStatoNominativi_Nominativi">
+      <End Role="Nominativi" EntitySet="Nominativi" />
+      <End Role="OperazioniStatoNominativi" EntitySet="OperazioniStatoNominativi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Operazioni_StatoOperazioneGenerale" Association="Self.FK_Operazioni_StatoOperazioneGenerale">
+      <End Role="StatoOperazioneGenerale" EntitySet="StatoOperazioneGenerale" />
+      <End Role="Operazioni" EntitySet="Operazioni" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Operazioni_UploadedFiles" Association="Self.FK_Operazioni_UploadedFiles">
+      <End Role="UploadedFiles" EntitySet="UploadedFiles" />
+      <End Role="Operazioni" EntitySet="Operazioni" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OperazioniStatoNominativi_StatoNominativi" Association="Self.FK_OperazioniStatoNominativi_StatoNominativi">
+      <End Role="StatoNominativi" EntitySet="StatoNominativi" />
+      <End Role="OperazioniStatoNominativi" EntitySet="OperazioniStatoNominativi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatoOperazioneGenerale_StatoOperazioneGenerale" Association="Self.FK_StatoOperazioneGenerale_StatoOperazioneGenerale">
+      <End Role="StatoOperazioneGenerale" EntitySet="StatoOperazioneGenerale" />
+      <End Role="StatoOperazioneGenerale1" EntitySet="StatoOperazioneGenerale" />
+    </AssociationSet>
+    <AssociationSet Name="TipoUtenteUsers" Association="H2HModel.TipoUtenteUsers">
+      <End Role="TipoUtente" EntitySet="TipoUtente" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="CategorieProdottiOperazioni" Association="H2HModel.CategorieProdottiOperazioni">
+      <End Role="CategorieProdotti" EntitySet="CategorieProdotti" />
+      <End Role="Operazioni" EntitySet="Operazioni" />
+    </AssociationSet>
+    <EntitySet Name="Logs" EntityType="H2HModel.Logs" />
+  </EntityContainer>
+  <Association Name="TipoUtenteUsers">
+    <End Type="H2HModel.TipoUtente" Role="TipoUtente" Multiplicity="1" />
+    <End Type="H2HModel.Users" Role="Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoUtente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="TipoUtente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CategorieProdottiOperazioni">
+    <End Type="H2HModel.CategorieProdotti" Role="CategorieProdotti" Multiplicity="1" />
+    <End Type="H2HModel.Operazioni" Role="Operazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieProdotti">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operazioni">
+        <PropertyRef Name="Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProprieta" Type="Int32" Nullable="false" />
+    <Property Name="TipoProdotto" Type="H2HModel.TipoProdotto" Nullable="false" />
+    <Property Name="IdRequest" Type="String" Nullable="false" />
+  </EntityType>
+  <EnumType Name="TipoProdotto">
+    <Member Name="Telegramma" Value="1" />
+    <Member Name="Rol" Value="2" />
+    <Member Name="Lol" Value="3" />
+  </EnumType>
+</Schema>

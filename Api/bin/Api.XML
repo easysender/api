@@ -1,0 +1,3174 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Areas.HelpPage.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
+            </summary>
+            <param name="description">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The ID as a string.</returns>
+        </member>
+        <member name="T:Api.Areas.HelpPage.HelpPageConfig">
+            <summary>
+            Use this class to customize the Help Page.
+            For example you can set a custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> to supply the documentation
+            or you can provide the samples for the requests/responses.
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.Controllers.HelpController">
+            <summary>
+            The controller that will handle requests for the help page.
+            </summary>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration,System.Web.Http.Description.IDocumentationProvider)">
+            <summary>
+            Sets the documentation provider for help page.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="documentationProvider">The documentation provider.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleObjects(System.Web.Http.HttpConfiguration,System.Collections.Generic.IDictionary{System.Type,System.Object})">
+            <summary>
+            Sets the objects that will be used by the formatters to produce sample requests/responses.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleObjects">The sample objects.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type and action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample request directly for the specified media type and action with parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type of the action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample response directly for the specified media type of the action with specific parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleForMediaType(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Sets the sample directly for all actions with the specified media type.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample.</param>
+            <param name="mediaType">The media type.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleForType(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Sets the sample directly for all actions with the specified type and media type.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The parameter type or return type of an action.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Gets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <returns>The help page sample generator.</returns>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.SetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration,Api.Areas.HelpPage.HelpPageSampleGenerator)">
+            <summary>
+            Sets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleGenerator">The help page sample generator.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.GetModelDescriptionGenerator(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Gets the model description generator.
+            </summary>
+            <param name="config">The configuration.</param>
+            <returns>The <see cref="T:Api.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"/></returns>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageApiModel(System.Web.Http.HttpConfiguration,System.String)">
+            <summary>
+            Gets the model that represents an API displayed on the help page. The model is initialized on the first call and cached for subsequent calls.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="apiDescriptionId">The <see cref="T:System.Web.Http.Description.ApiDescription"/> ID.</param>
+            <returns>
+            An <see cref="T:Api.Areas.HelpPage.Models.HelpPageApiModel"/>
+            </returns>
+        </member>
+        <member name="T:Api.Areas.HelpPage.ModelDescriptions.ModelDescription">
+            <summary>
+            Describes a type model.
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator">
+            <summary>
+            Generates model descriptions for given types.
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.ModelDescriptions.ModelNameAttribute">
+            <summary>
+            Use this attribute to change the name of the <see cref="T:Api.Areas.HelpPage.ModelDescriptions.ModelDescription"/> generated for a type.
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.Models.HelpPageApiModel">
+            <summary>
+            The model that represents an API displayed on the help page.
+            </summary>
+        </member>
+        <member name="M:Api.Areas.HelpPage.Models.HelpPageApiModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Api.Areas.HelpPage.Models.HelpPageApiModel"/> class.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription">
+            <summary>
+            Gets or sets the <see cref="P:Api.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription"/> that describes the API.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.UriParameters">
+            <summary>
+            Gets or sets the <see cref="T:Api.Areas.HelpPage.ModelDescriptions.ParameterDescription"/> collection that describes the URI parameters for the API.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.RequestDocumentation">
+            <summary>
+            Gets or sets the documentation for the request.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.RequestModelDescription">
+            <summary>
+            Gets or sets the <see cref="T:Api.Areas.HelpPage.ModelDescriptions.ModelDescription"/> that describes the request body.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.RequestBodyParameters">
+            <summary>
+            Gets the request body parameter descriptions.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.ResourceDescription">
+            <summary>
+            Gets or sets the <see cref="T:Api.Areas.HelpPage.ModelDescriptions.ModelDescription"/> that describes the resource.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.ResourceProperties">
+            <summary>
+            Gets the resource property descriptions.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.SampleRequests">
+            <summary>
+            Gets the sample requests associated with the API.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.SampleResponses">
+            <summary>
+            Gets the sample responses associated with the API.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.Models.HelpPageApiModel.ErrorMessages">
+            <summary>
+            Gets the error messages associated with this model.
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.HelpPageSampleGenerator">
+            <summary>
+            This class will generate the samples for the help page.
+            </summary>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Api.Areas.HelpPage.HelpPageSampleGenerator"/> class.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes">
+            <summary>
+            Gets CLR types that are used as the content of <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/>.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples">
+            <summary>
+            Gets the objects that are used directly as samples for certain actions.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects">
+            <summary>
+            Gets the objects that are serialized as samples by the supported formatters.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories">
+            <summary>
+            Gets factories for the objects that the supported formatters will serialize as samples. Processed in order,
+            stopping when the factory successfully returns a non-<see langref="null"/> object.
+            </summary>
+            <remarks>
+            Collection includes just <see cref="M:Api.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)"/> initially. Use
+            <code>SampleObjectFactories.Insert(0, func)</code> to provide an override and
+            <code>SampleObjectFactories.Add(func)</code> to provide a fallback.</remarks>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the request body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.GetSampleResponses(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the response body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.GetSample(System.Web.Http.Description.ApiDescription,Api.Areas.HelpPage.SampleDirection)">
+            <summary>
+            Gets the request or response body samples.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.GetActionSample(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Type,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,Api.Areas.HelpPage.SampleDirection)">
+            <summary>
+            Search for samples that are provided directly through <see cref="P:Api.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples"/>.
+            </summary>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="type">The CLR type.</param>
+            <param name="formatter">The formatter.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The sample that matches the parameters.</returns>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.GetSampleObject(System.Type)">
+            <summary>
+            Gets the sample object that will be serialized by the formatters. 
+            First, it will look at the <see cref="P:Api.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects"/>. If no sample object is found, it will try to create
+            one using <see cref="M:Api.Areas.HelpPage.HelpPageSampleGenerator.DefaultSampleObjectFactory(Api.Areas.HelpPage.HelpPageSampleGenerator,System.Type)"/> (which wraps an <see cref="T:Api.Areas.HelpPage.ObjectGenerator"/>) and other
+            factories in <see cref="P:Api.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The sample object.</returns>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.ResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Resolves the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The type.</returns>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.ResolveType(System.Web.Http.Description.ApiDescription,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},Api.Areas.HelpPage.SampleDirection,System.Collections.ObjectModel.Collection{System.Net.Http.Formatting.MediaTypeFormatter}@)">
+            <summary>
+            Resolves the type of the action parameter or return value when <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/> is used.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or a response.</param>
+            <param name="formatters">The formatters.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleGenerator.WriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter,System.Object,System.Type,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Writes the sample object using formatter.
+            </summary>
+            <param name="formatter">The formatter.</param>
+            <param name="value">The value.</param>
+            <param name="type">The type.</param>
+            <param name="mediaType">Type of the media.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Areas.HelpPage.HelpPageSampleKey">
+            <summary>
+            This is used to identify the place where the sample should be applied.
+            </summary>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Creates a new <see cref="T:Api.Areas.HelpPage.HelpPageSampleKey"/> based on media type.
+            </summary>
+            <param name="mediaType">The media type.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Creates a new <see cref="T:Api.Areas.HelpPage.HelpPageSampleKey"/> based on media type and CLR type.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The CLR type.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleKey.#ctor(Api.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:Api.Areas.HelpPage.HelpPageSampleKey"/> based on <see cref="P:Api.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="sampleDirection">The <see cref="P:Api.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:Api.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,Api.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:Api.Areas.HelpPage.HelpPageSampleKey"/> based on media type, <see cref="P:Api.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The <see cref="P:Api.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleKey.ControllerName">
+            <summary>
+            Gets the name of the controller.
+            </summary>
+            <value>
+            The name of the controller.
+            </value>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleKey.ActionName">
+            <summary>
+            Gets the name of the action.
+            </summary>
+            <value>
+            The name of the action.
+            </value>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleKey.MediaType">
+            <summary>
+            Gets the media type.
+            </summary>
+            <value>
+            The media type.
+            </value>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleKey.ParameterNames">
+            <summary>
+            Gets the parameter names.
+            </summary>
+        </member>
+        <member name="P:Api.Areas.HelpPage.HelpPageSampleKey.SampleDirection">
+            <summary>
+            Gets the <see cref="P:Api.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.ImageSample">
+            <summary>
+            This represents an image sample on the help page. There's a display template named ImageSample associated with this class.
+            </summary>
+        </member>
+        <member name="M:Api.Areas.HelpPage.ImageSample.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Api.Areas.HelpPage.ImageSample"/> class.
+            </summary>
+            <param name="src">The URL of an image.</param>
+        </member>
+        <member name="T:Api.Areas.HelpPage.InvalidSample">
+            <summary>
+            This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.ObjectGenerator">
+            <summary>
+            This class will create an object of a given type and populate it with sample data.
+            </summary>
+        </member>
+        <member name="M:Api.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)">
+            <summary>
+            Generates an object for a given type. The type needs to be public, have a public default constructor and settable public properties/fields. Currently it supports the following types:
+            Simple types: <see cref="T:System.Int32"/>, <see cref="T:System.String"/>, <see cref="T:System.Enum"/>, <see cref="T:System.DateTime"/>, <see cref="T:System.Uri"/>, etc.
+            Complex types: POCO types.
+            Nullables: <see cref="T:System.Nullable`1"/>.
+            Arrays: arrays of simple types or complex types.
+            Key value pairs: <see cref="T:System.Collections.Generic.KeyValuePair`2"/>
+            Tuples: <see cref="T:System.Tuple`1"/>, <see cref="T:System.Tuple`2"/>, etc
+            Dictionaries: <see cref="T:System.Collections.Generic.IDictionary`2"/> or anything deriving from <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            Collections: <see cref="T:System.Collections.Generic.IList`1"/>, <see cref="T:System.Collections.Generic.IEnumerable`1"/>, <see cref="T:System.Collections.Generic.ICollection`1"/>, <see cref="T:System.Collections.IList"/>, <see cref="T:System.Collections.IEnumerable"/>, <see cref="T:System.Collections.ICollection"/> or anything deriving from <see cref="T:System.Collections.Generic.ICollection`1"/> or <see cref="T:System.Collections.IList"/>.
+            Queryables: <see cref="T:System.Linq.IQueryable"/>, <see cref="T:System.Linq.IQueryable`1"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>An object of the given type.</returns>
+        </member>
+        <member name="T:Api.Areas.HelpPage.SampleDirection">
+            <summary>
+            Indicates whether the sample is used for request or response
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.TextSample">
+            <summary>
+            This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:Api.Areas.HelpPage.XmlDocumentationProvider">
+            <summary>
+            A custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> that reads the API documentation from an XML documentation file.
+            </summary>
+        </member>
+        <member name="M:Api.Areas.HelpPage.XmlDocumentationProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Api.Areas.HelpPage.XmlDocumentationProvider"/> class.
+            </summary>
+            <param name="documentPath">The physical path to XML document.</param>
+        </member>
+        <member name="T:Api.Controllers.Api.RolController">
+            <summary>
+            Raccomandata online
+            </summary>
+        </member>
+        <member name="T:Api.Models.lol">
+            <summary>
+            Lettera online
+            </summary>
+        </member>
+        <member name="T:Api.ServiceLol.RecuperaIdRichiestaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaIdRichiestaResult.IDRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaIdRichiestaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.CEResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.CEResult.Type">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.CEResult.Code">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.CEResult.Description">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.NomiUPUCountries">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.NomiUPUCountries.Lingua">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.NomiUPUCountries.ListaNomi">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.CountryLanguage">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.CountryLanguage.Italiano">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.CountryLanguage.Inglese">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.CountryLanguage.Francese">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.CountryLanguage.Italiano_Inglese">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.CountryLanguage.Italiano_Francese">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.OutputRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OutputRichiesta.IdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OutputRichiesta.Stato">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.OutputRichiestaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OutputRichiestaResult.OutputRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OutputRichiestaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.RecuperaStatiResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaStatiResult.OutputRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaStatiResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.StatoIdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.StatoIdRichiesta.IdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.StatoIdRichiesta.Stato">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.TicketId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TicketId.EPM">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TicketId.ReceipientId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TicketId.ID">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TicketId.ServiceId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TicketId.RequestId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TicketId.AcceptDate">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.EPM">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.EPM.TimeStamp">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.EPM.TranKey">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.EPM.PostmarkToken">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.GetStatoOrdineResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.GetStatoOrdineResult.IdOrdine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.GetStatoOrdineResult.TicketId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.GetStatoOrdineResult.StatoIdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.GetStatoOrdineResult.StatoOrdine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.GetStatoOrdineResult.CeResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.GetStatoIdRichiestaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.GetStatoIdRichiestaResult.StatoIdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.GetStatoIdRichiestaResult.CeResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.AnnullaItem">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AnnullaItem.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AnnullaItem.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Richiesta.IDRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Richiesta.GuidUtente">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.AnnullaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AnnullaResult.AnnullaItems">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AnnullaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.AnnullaOrdineResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AnnullaOrdineResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.NascondiResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.NascondiResult.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.NascondiResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ConfermaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ConfermaResult.DestinatariLettera">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ConfermaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.DestinatarioLettera">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DestinatarioLettera.IdRicevuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DestinatarioLettera.Id">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DestinatarioLettera.EPM">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.DatiTransazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DatiTransazione.IdTransazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DatiTransazione.CodiceAutorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DatiTransazione.DataAutorizzazione">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.PostConfermaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PostConfermaResult.IdOrdine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PostConfermaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.PreConfermaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PreConfermaResult.IdOrdine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PreConfermaResult.Valorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PreConfermaResult.DestinatariLettera">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PreConfermaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Valorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Valorizzazione.ValorizzazioneServizio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Valorizzazione.OpzionePagamento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Valorizzazione.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Valorizzazione.ImpostaDiBollo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Valorizzazione.ImportoTotaleConIdB">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ValorizzazioneServizio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzazioneServizio.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzazioneServizio.IDServizio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzazioneServizio.NumeroPagine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzazioneServizio.OggettoValorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzazioneServizio.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzazioneServizio.ImpostaDiBollo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzazioneServizio.ImportoTotaleConIdB">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzazioneServizio.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.OggettoValorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.CodiceMateriale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.DescrizioneCodiceMateriale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.PercentualeIva">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.CodiceIva">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.Quantita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.ImportoUnitarioTotale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.ImportoUnitarioNetto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OggettoValorizzazione.ImportoUnitarioIva">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Totale.Valuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Totale.Descrizione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Totale.ImportoTotale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Totale.ImportoNetto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Totale.ImportoIva">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.OpzionePagamento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionePagamento.PostFatturazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionePagamento.DescrizioneTipoPagamento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionePagamento.IdTipoPagamento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ValorizzaSingleResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzaSingleResult.ServizioEnquiryResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzaSingleResult.LOLInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzaSingleResult.Documento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ServizioEnquiryResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquiryResponse.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquiryResponse.StatoLavorazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquiryResponse.TipoVisualizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquiryResponse.NumeroPagine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquiryResponse.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquiryResponse.OggettoValorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquiryResponse.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.StatoLavorazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.StatoLavorazione.Id">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.StatoLavorazione.Descrizione">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.LOLInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfo.Mittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfo.Destinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfo.NumeroDestinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfo.Opzioni">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfo.ServiziAggiuntivi">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfo.DataLettera">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Mittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Mittente.Nominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Mittente.InviaStampa">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Nominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Indirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Telefono">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Zona">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Stato">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Citta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Provincia">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.ForzaDestinazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.UfficioPostale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.TipoIndirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.CasellaPostale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Cognome">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Nome">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.InesitateDigitali">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.CodiceFiscale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.CodiceFiscaleResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.CAP">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.Frazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.ComplementoIndirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.ComplementoNominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.RagioneSociale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Nominativo.AnyAttr">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Indirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Indirizzo.DUG">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Indirizzo.Toponimo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Indirizzo.NumeroCivico">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Indirizzo.Esponente">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.NominativoTipoIndirizzo">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.NominativoTipoIndirizzo.NORMALE">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.NominativoTipoIndirizzo.CASELLAPOSTALE">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Destinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Destinatario.Nominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Destinatario.DettaglioCover">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Destinatario.Any">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Destinatario.IdDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Destinatario.IdRicevuta">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.DattaglioCover">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DattaglioCover.ProtocolloMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DattaglioCover.TestoLibero">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.LOLInfoOpzioni">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.Inserti">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.OpzionidiStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.OpzioniAggiuntive">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.SecurPaper">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.InserisciMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.DataStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.FirmaElettronica">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.Archiviazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioni.DPM">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.LOLInfoOpzioniInserti">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioniInserti.InserisciMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLInfoOpzioniInserti.Inserto">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.OpzionidiStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionidiStampa.OpzioniAggiuntiveStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionidiStampa.ResolutionY">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionidiStampa.PageSize">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionidiStampa.ResolutionX">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionidiStampa.BW">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzionidiStampa.FronteRetro">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ServizioAggiuntivo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioAggiuntivo.ID">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioAggiuntivo.Descrizione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioAggiuntivo.Valore">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.OpzionidiStampaPageSize">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A0">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A1">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A2">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A3">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A4">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A5">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A6">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A7">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A8">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.OpzionidiStampaPageSize.A9">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Documento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Documento.Immagine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Documento.MD5">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Documento.Firmatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Documento.TipoDocumento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ServizioSingleEnquirySubmit">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioSingleEnquirySubmit.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioSingleEnquirySubmit.RestituisciDocumento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ValorizzaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzaResult.ServizioEnquiryResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValorizzaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ServizioEnquirySubmit">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquirySubmit.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ServizioEnquirySubmit.StatoLavorazione">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.RecuperaEnquiryResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaEnquiryResult.PreServiziEnquiry">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaEnquiryResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.LOLResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLResponse.ValidaDestinatariResults">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLResponse.NumeroDestinatari">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ValidaDestinatariResults">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValidaDestinatariResults.DatiDestinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValidaDestinatariResults.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ValidaDestinatariResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValidaDestinatariResult.Destinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValidaDestinatariResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.InvioResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioResult.IDRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioResult.GuidUtente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioResult.LOLResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioResult.PrezzaturaSincronaResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioResult.DescrizioneFirma">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioResult.PreviewEncryptionPassword">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioResult.PreviewEncryptionSalt">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.DescrizioneFirma">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DescrizioneFirma.Id">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DescrizioneFirma.Descrizione">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.DescrizioneLettera">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DescrizioneLettera.TracciaturaLettera">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.DescrizioneLettera.TipoLettera">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Pubblicita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Pubblicita.Logo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Pubblicita.Testo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Pubblicita.IsHtml">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Pubblicita.LogoFileName">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.PaginaBollettinoBase">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PaginaBollettinoBase.Bollettino">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.BollettinoBase">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.Logo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.ExtendedProperty">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.EseguitoDa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.TestoZC">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.LogoZC">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.NumeroContoCorrente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.IntestatoA">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.FormatoStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.Template">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.AdditionalInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.NumeroAutorizzazioneStampaInProprio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.IBAN">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.Codice">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.LogoFileName">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoBase.Causale">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ExtendedPropertyBase">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ExtendedPropertyXml">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ExtendedPropertyXml.xml">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.BollettinoEseguitoDa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoEseguitoDa.Nominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoEseguitoDa.Indirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoEseguitoDa.CAP">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.BollettinoEseguitoDa.Localita">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.TestoType">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TestoType.Any">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.FormatoStampaBollettino">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.FormatoStampaBollettino.BIS">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceLol.FormatoStampaBollettino.TER">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Bollettino674">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Bollettino674.CodiceCliente">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Bollettino896">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Bollettino896.ImportoEuro">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Bollettino896.CodiceCliente">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.Bollettino451">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.Bollettino451.ImportoEuro">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.PaginaBollettinoPubblicita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PaginaBollettinoPubblicita.Pubblicita">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.PaginaDueBollettini">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PaginaDueBollettini.Bollettino2">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.PaginaBollettino">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.OpzioniAvanzate">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzioniAvanzate.DocumentEncryptionPassword">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzioniAvanzate.DocumentEncryptionSalt">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzioniAvanzate.LivelloCriticita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzioniAvanzate.AdditionalInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzioniAvanzate.TipoDocumento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzioniAvanzate.Customer">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.OpzioniAvanzate.RecuperaPreviewCifrata">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.TestataCover">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TestataCover.Logo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.TestataCover.ChiusuraLettera">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.LOLSubmit">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.Mittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.Destinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.NumeroDestinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.Documento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.TestataCover">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.Opzioni">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.ServiziAggiuntivi">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.OpzioniAvanzate">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.PagineBollettini">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.DescrizioneLettera">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.AvvisoPagamentoPagoPA">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.ForzaInvioDestinazioniValide">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.Nazionale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmit.PrezzaturaSincrona">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.LOLSubmitOpzioni">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.Inserti">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.OpzionidiStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.OpzioniAggiuntive">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.SecurPaper">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.InserisciMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.DataStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.FirmaElettronica">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.Archiviazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioni.DPM">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.LOLSubmitOpzioniInserti">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioniInserti.InserisciMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.LOLSubmitOpzioniInserti.Inserto">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.AvvisoPagamentoPagoPA">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPA.EnteCreditore">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPA.Destinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPA.Pagamento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.AvvisoPagamentoPagoPAEnteCreditore">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAEnteCreditore.CodiceFiscaleEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAEnteCreditore.SettoreEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAEnteCreditore.DenominazioneEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAEnteCreditore.LogoEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAEnteCreditore.InfoEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAEnteCreditore.AutorizzazioneStampaInProprio">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.AvvisoPagamentoPagoPADestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPADestinatario.NomeCognomeDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPADestinatario.IndirizzoDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPADestinatario.CodiceFiscaleDestinatario">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.Oggetto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.Importo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.Scadenza">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.CBILL">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.CodiceAvviso">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.NumeroCCPostale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.IntestatarioCCPostale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.Rate">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.RateTesto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.PagamentoRateale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.DelTuoEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.DiPoste">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.AvvisoPagamentoPagoPAPagamento.AllaRata">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata.NumeroRata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata.Scadenza">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata.Importo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata.CodiceAvvisoRata">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.InvioDocResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioDocResult.DescrizioneFirma">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.InvioDocResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.RecuperaBollettiniPAInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaBollettiniPAInfoResult.IdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaBollettiniPAInfoResult.HasBollettinoPA">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaBollettiniPAInfoResult.AdditionalInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaBollettiniPAInfoResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.PaginaBollettinoInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PaginaBollettinoInfo.Any">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PaginaBollettinoInfo.NumeroBollettini">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PaginaBollettinoInfo.NumeroPubblicita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PaginaBollettinoInfo.NumeroPagina">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.PagineBollettiniInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PagineBollettiniInfo.PaginaBollettinoInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PagineBollettiniInfo.NumeroBollettini">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PagineBollettiniInfo.NumeroPubblicita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.PagineBollettiniInfo.NumeroPagine">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.RecuperaBollettiniInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaBollettiniInfoResult.PagineBollettiniInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaBollettiniInfoResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ValidaBollettinoResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValidaBollettinoResult.Bollettino">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValidaBollettinoResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.ValidaBollettiniResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValidaBollettiniResult.BollettiniResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.ValidaBollettiniResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.RecuperaDestinatariResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaDestinatariResult.Destinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaDestinatariResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.RecuperaInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaInfoResult.LOL">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaInfoResult.Valorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaInfoResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceLol.RecuperaDCSResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaDCSResult.Documento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceLol.RecuperaDCSResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaRicevutaAccettazioneResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaRicevutaAccettazioneResult.Contenuto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaRicevutaAccettazioneResult.DataAccettazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaRicevutaAccettazioneResult.Estensione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaRicevutaAccettazioneResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.CEResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.CEResult.Type">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.CEResult.Code">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.CEResult.Description">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.UPUCountry">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.UPUCountry.ArAbilitato">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.UPUCountry.CodiceNazioneNumerico">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.UPUCountry.CodiceISO3166Alfa3">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.UPUCountry.Zona">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.UPUCountry.UnioneEuropea">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.UPUCountry.NomeItaliano">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.UPUCountry.NomeFrancese">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.UPUCountry.NomeInglese">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.NomiUPUCountries">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.NomiUPUCountries.Lingua">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.NomiUPUCountries.ListaNomi">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.CountryLanguage">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.CountryLanguage.Italiano">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.CountryLanguage.Inglese">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.CountryLanguage.Francese">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.CountryLanguage.Italiano_Inglese">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.CountryLanguage.Italiano_Francese">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.StatoIdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoIdRichiesta.IdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoIdRichiesta.Stato">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.TicketId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TicketId.EPM">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TicketId.ReceipientId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TicketId.ID">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TicketId.ServiceId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TicketId.RequestId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TicketId.AcceptDate">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.EPM">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.EPM.TimeStamp">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.EPM.TranKey">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.EPM.PostmarkToken">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.GetStatoOrdineResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.GetStatoOrdineResult.IdOrdine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.GetStatoOrdineResult.TicketId">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.GetStatoOrdineResult.StatoIdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.GetStatoOrdineResult.StatoOrdine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.GetStatoOrdineResult.CeResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.GetStatoIdRichiestaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.GetStatoIdRichiestaResult.StatoIdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.GetStatoIdRichiestaResult.CeResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.StatoInviiResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoInviiResult.ArrayDiRichieste">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoInviiResult.CeResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.StatoDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoDestinatario.IdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoDestinatario.GuidUtente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoDestinatario.StatoRichieste">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.StatoRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoRichiesta.StatoType">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoRichiesta.StatoDescrizione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoRichiesta.NumeroServizio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoRichiesta.DataEsito">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.StatoInviiPerNumeroResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoInviiPerNumeroResult.StatoRichieste">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoInviiPerNumeroResult.CeResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.StatoInviiPerDataResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoInviiPerDataResult.ArrayDiRichieste">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoInviiPerDataResult.CeResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.StatoInviiPerIDResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoInviiPerIDResult.ArrayDiRichieste">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoInviiPerIDResult.CeResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.OutputRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OutputRichiesta.IdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OutputRichiesta.Stato">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.OutputRichiestaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OutputRichiestaResult.OutputRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OutputRichiestaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaStatiResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaStatiResult.OutputRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaStatiResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ScambiaRichiestaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ScambiaRichiestaResult.RichiestaProrogata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ScambiaRichiestaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ScambiaRichiestaResultRichiestaProrogata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ScambiaRichiestaResultRichiestaProrogata.NRAProrogati">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ScambiaRichiestaResultRichiestaProrogata.NuovoIdRichiesta">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.NR">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.NR.NumeroRaccomandata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.NR.IdDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.NR.DataScadenza">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaNumeriRaccomandataResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaNumeriRaccomandataResult.RichiestaNR">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaNumeriRaccomandataResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaNumeriRaccomandataResultRichiestaNR">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaNumeriRaccomandataResultRichiestaNR.NR">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaNumeriRaccomandataResultRichiestaNR.CEResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaNumeriRaccomandataResultRichiestaNR.IdRichiesta">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.IdRichiestaNR">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.IdRichiestaNR.IdDestinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.IdRichiestaNR.IsEstero">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.AnnullaItem">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AnnullaItem.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AnnullaItem.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Richiesta.IDRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Richiesta.GuidUtente">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.AnnullaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AnnullaResult.Richieste">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AnnullaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.AnnullaOrdineResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AnnullaOrdineResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.NascondiResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.NascondiResult.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.NascondiResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ConfermaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ConfermaResult.DestinatariRaccomandata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ConfermaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.DestinatarioRaccomandata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DestinatarioRaccomandata.IdRicevuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DestinatarioRaccomandata.NumeroRaccomandata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DestinatarioRaccomandata.EPM">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.DatiTransazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DatiTransazione.IdTransazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DatiTransazione.CodiceAutorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DatiTransazione.DataAutorizzazione">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.PostConfermaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PostConfermaResult.IdOrdine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PostConfermaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.PreConfermaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PreConfermaResult.IdOrdine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PreConfermaResult.Valorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PreConfermaResult.DestinatariRaccomandata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PreConfermaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Valorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Valorizzazione.ValorizzazioneServizio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Valorizzazione.OpzionePagamento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Valorizzazione.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Valorizzazione.ImpostaDiBollo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Valorizzazione.ImportoTotaleConIdB">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ValorizzazioneServizio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzazioneServizio.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzazioneServizio.IDServizio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzazioneServizio.NumeroPagine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzazioneServizio.OggettoValorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzazioneServizio.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzazioneServizio.ImpostaDiBollo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzazioneServizio.ImportoTotaleConIdB">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzazioneServizio.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.OggettoValorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.CodiceMateriale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.DescrizioneCodiceMateriale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.PercentualeIva">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.CodiceIva">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.Quantita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.ImportoUnitarioTotale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.ImportoUnitarioNetto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OggettoValorizzazione.ImportoUnitarioIva">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Totale.Valuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Totale.Descrizione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Totale.ImportoTotale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Totale.ImportoNetto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Totale.ImportoIva">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.OpzionePagamento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionePagamento.PostFatturazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionePagamento.DescrizioneTipoPagamento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionePagamento.IdTipoPagamento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ValorizzaSingleResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzaSingleResult.ServizioEnquiryResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzaSingleResult.ROLInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzaSingleResult.Documento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ServizioEnquiryResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquiryResponse.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquiryResponse.StatoLavorazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquiryResponse.TipoVisualizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquiryResponse.NumeroPagine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquiryResponse.Totale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquiryResponse.OggettoValorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquiryResponse.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.StatoLavorazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoLavorazione.Id">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.StatoLavorazione.Descrizione">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ROLInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfo.Mittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfo.DatiRicevuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfo.Destinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfo.NumeroDestinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfo.Opzioni">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfo.ServiziAggiuntivi">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfo.DataLettera">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Mittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Mittente.Nominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Mittente.InviaStampa">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Nominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Indirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Telefono">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Zona">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Stato">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Citta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Provincia">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.ForzaDestinazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.UfficioPostale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.TipoIndirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.CasellaPostale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Cognome">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Nome">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.InesitateDigitali">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.CodiceFiscale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.CodiceFiscaleResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.CAP">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.Frazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.ComplementoIndirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.ComplementoNominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.RagioneSociale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Nominativo.AnyAttr">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Indirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Indirizzo.DUG">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Indirizzo.Toponimo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Indirizzo.NumeroCivico">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Indirizzo.Esponente">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.NominativoTipoIndirizzo">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.NominativoTipoIndirizzo.NORMALE">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.NominativoTipoIndirizzo.CASELLAPOSTALE">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.DatiRicevuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DatiRicevuta.Nominativo">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Destinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Destinatario.Nominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Destinatario.DettaglioCover">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Destinatario.Any">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Destinatario.IdDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Destinatario.IdRicevuta">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.DattaglioCover">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DattaglioCover.ProtocolloMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DattaglioCover.TestoLibero">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ROLInfoOpzioni">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.Inserti">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.OpzionidiStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.OpzioniAggiuntive">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.SecurPaper">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.InserisciMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.DataStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.FirmaElettronica">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.Archiviazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioni.DPM">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ROLInfoOpzioniInserti">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioniInserti.InserisciMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLInfoOpzioniInserti.Inserto">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.OpzionidiStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionidiStampa.OpzioniAggiuntiveStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionidiStampa.ResolutionY">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionidiStampa.PageSize">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionidiStampa.ResolutionX">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionidiStampa.BW">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzionidiStampa.FronteRetro">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ServizioAggiuntivo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioAggiuntivo.ID">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioAggiuntivo.Descrizione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioAggiuntivo.Valore">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.OpzionidiStampaPageSize">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A0">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A1">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A2">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A3">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A4">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A5">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A6">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A7">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A8">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.OpzionidiStampaPageSize.A9">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Documento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Documento.Immagine">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Documento.MD5">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Documento.Firmatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Documento.TipoDocumento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ServizioSingleEnquirySubmit">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioSingleEnquirySubmit.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioSingleEnquirySubmit.RestituisciDocumento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ValorizzaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzaResult.ServizioEnquiryResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValorizzaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ServizioEnquirySubmit">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquirySubmit.Richiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ServizioEnquirySubmit.StatoLavorazione">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaEnquiryResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaEnquiryResult.PreServiziEnquiry">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaEnquiryResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ArrayOfDatiRicevuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ArrayOfDatiRicevuta.ArrayOfDatiRicevuta1">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ArrayOfDatiRicevuta.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ROLResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLResponse.ArrayOfDatiRicevuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLResponse.ValidaDestinatariResults">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLResponse.NumeroDestinatari">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ValidaDestinatariResults">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValidaDestinatariResults.DatiDestinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValidaDestinatariResults.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ValidaDestinatariResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValidaDestinatariResult.Destinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValidaDestinatariResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.InvioResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioResult.IDRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioResult.GuidUtente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioResult.ROLResponse">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioResult.DescrizioneFirma">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioResult.PreviewEncryptionPassword">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioResult.PreviewEncryptionSalt">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioResult.PrezzaturaSincronaResponse">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.DescrizioneFirma">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DescrizioneFirma.Id">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.DescrizioneFirma.Descrizione">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Pubblicita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Pubblicita.Logo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Pubblicita.Testo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Pubblicita.IsHtml">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Pubblicita.LogoFileName">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.PaginaBollettinoBase">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PaginaBollettinoBase.Bollettino">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.BollettinoBase">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.Logo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.ExtendedProperty">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.EseguitoDa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.TestoZC">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.LogoZC">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.NumeroContoCorrente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.IntestatoA">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.FormatoStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.Template">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.AdditionalInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.NumeroAutorizzazioneStampaInProprio">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.IBAN">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.Codice">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.LogoFileName">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoBase.Causale">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ExtendedPropertyBase">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ExtendedPropertyXml">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ExtendedPropertyXml.xml">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.BollettinoEseguitoDa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoEseguitoDa.Nominativo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoEseguitoDa.Indirizzo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoEseguitoDa.CAP">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.BollettinoEseguitoDa.Localita">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.TestoType">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TestoType.Any">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.FormatoStampaBollettino">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.FormatoStampaBollettino.BIS">
+            <remarks/>
+        </member>
+        <member name="F:Api.ServiceRol.FormatoStampaBollettino.TER">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Bollettino674">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Bollettino674.CodiceCliente">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Bollettino896">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Bollettino896.ImportoEuro">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Bollettino896.CodiceCliente">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.Bollettino451">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.Bollettino451.ImportoEuro">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.PaginaBollettinoPubblicita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PaginaBollettinoPubblicita.Pubblicita">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.PaginaDueBollettini">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PaginaDueBollettini.Bollettino2">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.PaginaBollettino">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.OpzioniAvanzate">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzioniAvanzate.DocumentEncryptionPassword">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzioniAvanzate.DocumentEncryptionSalt">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzioniAvanzate.LivelloCriticita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzioniAvanzate.AdditionalInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzioniAvanzate.TipoDocumento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzioniAvanzate.Customer">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.OpzioniAvanzate.RecuperaPreviewCifrata">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.TestataCover">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TestataCover.Logo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.TestataCover.ChiusuraLettera">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ROLSubmit">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.Mittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.DatiRicevuta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.Destinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.NumeroDestinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.Documento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.TestataCover">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.Opzioni">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.ServiziAggiuntivi">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.OpzioniAvanzate">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.PagineBollettini">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.AvvisoPagamentoPagoPA">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.PrezzaturaSincrona">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.Nazionale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmit.ForzaInvioDestinazioniValide">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ROLSubmitOpzioni">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.Inserti">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.OpzionidiStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.OpzioniAggiuntive">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.SecurPaper">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.InserisciMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.DataStampa">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.FirmaElettronica">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.Archiviazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioni.DPM">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ROLSubmitOpzioniInserti">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioniInserti.InserisciMittente">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ROLSubmitOpzioniInserti.Inserto">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.AvvisoPagamentoPagoPA">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPA.EnteCreditore">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPA.Destinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPA.Pagamento">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.AvvisoPagamentoPagoPAEnteCreditore">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAEnteCreditore.CodiceFiscaleEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAEnteCreditore.SettoreEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAEnteCreditore.DenominazioneEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAEnteCreditore.LogoEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAEnteCreditore.InfoEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAEnteCreditore.AutorizzazioneStampaInProprio">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.AvvisoPagamentoPagoPADestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPADestinatario.NomeCognomeDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPADestinatario.IndirizzoDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPADestinatario.CodiceFiscaleDestinatario">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.Oggetto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.Importo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.Scadenza">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.CBILL">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.CodiceAvviso">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.NumeroCCPostale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.IntestatarioCCPostale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.Rate">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.RateTesto">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.PagamentoRateale">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.DelTuoEnte">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.DiPoste">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.AvvisoPagamentoPagoPAPagamento.AllaRata">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata.NumeroRata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata.Scadenza">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata.Importo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ArrayOfAvvisoPagamentoPagoPAPagamentoRataRata.CodiceAvvisoRata">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.InvioDocResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioDocResult.DescrizioneFirma">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.InvioDocResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaArResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaArResult.DocAR">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaArResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaBollettiniPAInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaBollettiniPAInfoResult.IdRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaBollettiniPAInfoResult.HasBollettinoPA">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaBollettiniPAInfoResult.AdditionalInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaBollettiniPAInfoResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.PaginaBollettinoInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PaginaBollettinoInfo.Any">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PaginaBollettinoInfo.NumeroBollettini">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PaginaBollettinoInfo.NumeroPubblicita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PaginaBollettinoInfo.NumeroPagina">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.PagineBollettiniInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PagineBollettiniInfo.PaginaBollettinoInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PagineBollettiniInfo.NumeroBollettini">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PagineBollettiniInfo.NumeroPubblicita">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.PagineBollettiniInfo.NumeroPagine">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaBollettiniInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaBollettiniInfoResult.PagineBollettiniInfo">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaBollettiniInfoResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ValidaBollettinoResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValidaBollettinoResult.Bollettino">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValidaBollettinoResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ValidaBollettiniResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValidaBollettiniResult.BollettiniResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ValidaBollettiniResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaDestinatariResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaDestinatariResult.Destinatari">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaDestinatariResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaInfoResult.ROL">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaInfoResult.Valorizzazione">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaInfoResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaDCSResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaDCSResult.Documento">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaDCSResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.RecuperaIdRichiestaResult">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaIdRichiestaResult.IDRichiesta">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.RecuperaIdRichiestaResult.CEResult">
+            <remarks/>
+        </member>
+        <member name="T:Api.ServiceRol.ScambiaRichiestaRichiestaAssegnata">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ScambiaRichiestaRichiestaAssegnata.NRAssegnati">
+            <remarks/>
+        </member>
+        <member name="P:Api.ServiceRol.ScambiaRichiestaRichiestaAssegnata.IdRichiesta">
+            <remarks/>
+        </member>
+    </members>
+</doc>

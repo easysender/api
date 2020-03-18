@@ -1,0 +1,1484 @@
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\ApplicationInsights.config
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\csc.exe
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\System.Collections.Immutable.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\System.Reflection.Metadata.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\vbc.exe
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\VBCSCompiler.exe
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\roslyn\VBCSCompiler.exe.config
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Api.dll.config
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Api.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Api.pdb
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Antlr3.Runtime.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\EntityFramework.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\EntityFramework.SqlServer.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.Agent.Intercept.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.DependencyCollector.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.Web.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.WindowsServer.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.ApplicationInsights.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AspNet.Identity.Core.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.Cookies.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.Facebook.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.Google.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.OAuth.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.Twitter.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Web.Infrastructure.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Newtonsoft.Json.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Owin.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Net.Http.Formatting.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Helpers.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Http.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Http.Owin.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Http.WebHost.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Mvc.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Optimization.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Razor.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.WebPages.Deployment.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.WebPages.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.WebPages.Razor.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\WebGrease.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.DependencyCollector.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.Web.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AI.WindowsServer.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.ApplicationInsights.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Newtonsoft.Json.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Net.Http.Formatting.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Helpers.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Http.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Http.WebHost.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Mvc.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Optimization.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Razor.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.WebPages.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.WebPages.Deployment.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.WebPages.Razor.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Antlr3.Runtime.pdb
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\EntityFramework.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\EntityFramework.SqlServer.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AspNet.Identity.Core.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.Facebook.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.Cookies.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.OAuth.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.Google.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.Twitter.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\System.Web.Http.Owin.xml
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Net.Http.Formatting.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.Helpers.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.Http.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.Http.WebHost.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.Mvc.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.Optimization.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.Razor.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.WebPages.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\EntityFramework.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\EntityFramework.SqlServer.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.Owin.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.Owin.Security.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\it\System.Web.Http.Owin.resources.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\obj\Debug\Api.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\obj\Debug\Api.pdb
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Api.XML
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\Swashbuckle.Core.dll
+H:\H2H-Nuova Procedura Invio\Api New\Api\Api\bin\WebActivatorEx.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Api.XML
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\obj\Debug\Api.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\obj\Debug\Api.pdb
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\ApplicationInsights.config
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\csc.exe
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\System.Collections.Immutable.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\System.Reflection.Metadata.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\vbc.exe
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\VBCSCompiler.exe
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\roslyn\VBCSCompiler.exe.config
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Api.dll.config
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Api.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Api.pdb
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Antlr3.Runtime.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\EntityFramework.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\EntityFramework.SqlServer.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.Agent.Intercept.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.DependencyCollector.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.Web.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.WindowsServer.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.ApplicationInsights.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AspNet.Identity.Core.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.Cookies.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.Facebook.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.Google.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.OAuth.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.Twitter.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Web.Infrastructure.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Newtonsoft.Json.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Owin.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Swashbuckle.Core.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Net.Http.Formatting.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Helpers.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Http.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Http.Owin.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Http.WebHost.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Mvc.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Optimization.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Razor.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.WebPages.Deployment.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.WebPages.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.WebPages.Razor.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\WebActivatorEx.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\WebGrease.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.DependencyCollector.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.Web.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AI.WindowsServer.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.ApplicationInsights.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Newtonsoft.Json.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Net.Http.Formatting.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Helpers.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Http.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Http.WebHost.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Mvc.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Optimization.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Razor.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.WebPages.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.WebPages.Deployment.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.WebPages.Razor.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Antlr3.Runtime.pdb
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\EntityFramework.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\EntityFramework.SqlServer.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AspNet.Identity.Core.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.Facebook.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.Cookies.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.OAuth.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.Google.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.Twitter.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\System.Web.Http.Owin.xml
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Net.Http.Formatting.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.Helpers.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.Http.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.Http.WebHost.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.Mvc.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.Optimization.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.Razor.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.WebPages.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\EntityFramework.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\EntityFramework.SqlServer.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.Owin.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.Owin.Security.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+E:\H2H-Nuova Procedura Invio\_extra\Api - Copia\Api\Api\bin\it\System.Web.Http.Owin.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\ApplicationInsights.config
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\csc.exe
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\System.Collections.Immutable.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\System.Reflection.Metadata.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\vbc.exe
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\VBCSCompiler.exe
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\roslyn\VBCSCompiler.exe.config
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Api.dll.config
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Api.XML
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Api.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Api.pdb
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Antlr3.Runtime.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\EntityFramework.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\EntityFramework.SqlServer.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.Agent.Intercept.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.DependencyCollector.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.Web.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.WindowsServer.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.ApplicationInsights.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AspNet.Identity.Core.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.Cookies.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.Facebook.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.Google.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.OAuth.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.Twitter.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Web.Infrastructure.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Newtonsoft.Json.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Owin.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Swashbuckle.Core.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Net.Http.Formatting.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Helpers.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Http.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Http.Owin.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Http.WebHost.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Mvc.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Optimization.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Razor.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.WebPages.Deployment.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.WebPages.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.WebPages.Razor.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\WebActivatorEx.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\WebGrease.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.DependencyCollector.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.Web.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AI.WindowsServer.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.ApplicationInsights.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Newtonsoft.Json.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Net.Http.Formatting.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Helpers.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Http.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Http.WebHost.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Mvc.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Optimization.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Razor.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.WebPages.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.WebPages.Deployment.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.WebPages.Razor.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Antlr3.Runtime.pdb
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\EntityFramework.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\EntityFramework.SqlServer.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AspNet.Identity.Core.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.Facebook.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.Cookies.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.OAuth.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.Google.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.Twitter.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\System.Web.Http.Owin.xml
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Net.Http.Formatting.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.Helpers.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.Http.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.Http.WebHost.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.Mvc.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.Optimization.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.Razor.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.WebPages.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\EntityFramework.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\EntityFramework.SqlServer.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.Owin.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.Owin.Security.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\bin\it\System.Web.Http.Owin.resources.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\obj\Debug\Api.dll
+E:\H2H-Nuova Procedura Invio\Api 2.0\Api\obj\Debug\Api.pdb
+F:\EasySender\Api 3.0\Api\bin\ApplicationInsights.config
+F:\EasySender\Api 3.0\Api\bin\roslyn\csc.exe
+F:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\EasySender\Api 3.0\Api\bin\roslyn\System.Collections.Immutable.dll
+F:\EasySender\Api 3.0\Api\bin\roslyn\System.Reflection.Metadata.dll
+F:\EasySender\Api 3.0\Api\bin\roslyn\vbc.exe
+F:\EasySender\Api 3.0\Api\bin\roslyn\VBCSCompiler.exe
+F:\EasySender\Api 3.0\Api\bin\roslyn\VBCSCompiler.exe.config
+F:\EasySender\Api 3.0\Api\bin\Api.dll.config
+F:\EasySender\Api 3.0\Api\bin\Api.XML
+F:\EasySender\Api 3.0\Api\bin\Api.dll
+F:\EasySender\Api 3.0\Api\bin\Api.pdb
+F:\EasySender\Api 3.0\Api\bin\Antlr3.Runtime.dll
+F:\EasySender\Api 3.0\Api\bin\EntityFramework.dll
+F:\EasySender\Api 3.0\Api\bin\EntityFramework.SqlServer.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.Agent.Intercept.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.DependencyCollector.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.Web.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.WindowsServer.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.ApplicationInsights.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Core.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Cookies.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Facebook.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Google.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.OAuth.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Twitter.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Web.Infrastructure.dll
+F:\EasySender\Api 3.0\Api\bin\Newtonsoft.Json.dll
+F:\EasySender\Api 3.0\Api\bin\Owin.dll
+F:\EasySender\Api 3.0\Api\bin\Swashbuckle.Core.dll
+F:\EasySender\Api 3.0\Api\bin\System.Net.Http.Formatting.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.Helpers.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.Http.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.Http.Owin.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.Http.WebHost.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.Mvc.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.Optimization.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.Razor.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.Deployment.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.dll
+F:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.Razor.dll
+F:\EasySender\Api 3.0\Api\bin\WebActivatorEx.dll
+F:\EasySender\Api 3.0\Api\bin\WebGrease.dll
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.DependencyCollector.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.Web.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AI.WindowsServer.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.ApplicationInsights.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\EasySender\Api 3.0\Api\bin\Newtonsoft.Json.xml
+F:\EasySender\Api 3.0\Api\bin\System.Net.Http.Formatting.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.Http.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.Http.Owin.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.Http.WebHost.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.Helpers.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.Mvc.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.Optimization.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.Razor.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.Deployment.xml
+F:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.Razor.xml
+F:\EasySender\Api 3.0\Api\bin\Antlr3.Runtime.pdb
+F:\EasySender\Api 3.0\Api\bin\EntityFramework.xml
+F:\EasySender\Api 3.0\Api\bin\EntityFramework.SqlServer.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Core.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Facebook.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Cookies.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.OAuth.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Google.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Twitter.xml
+F:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\EasySender\Api 3.0\Api\bin\it\System.Net.Http.Formatting.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.Http.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.Http.Owin.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.Http.WebHost.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.Helpers.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.Mvc.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.Optimization.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.Razor.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.WebPages.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\EntityFramework.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\EntityFramework.SqlServer.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+F:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\EasySender\Api 3.0\Api\obj\Debug\Api.dll
+F:\EasySender\Api 3.0\Api\obj\Debug\Api.pdb
+F:\EasySender\Api 3.0\Api\bin\AutoMapper.dll
+F:\EasySender\Api 3.0\Api\bin\System.ValueTuple.dll
+F:\EasySender\Api 3.0\Api\bin\AutoMapper.xml
+F:\EasySender\Api 3.0\Api\bin\System.ValueTuple.xml
+F:\EasySender\Api 3.0\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
+G:\EasySender\Api 3.0\Api\bin\Api.XML
+G:\EasySender\Api 3.0\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
+G:\EasySender\Api 3.0\Api\obj\Debug\Api.dll
+G:\EasySender\Api 3.0\Api\obj\Debug\Api.pdb
+G:\EasySender\Api 3.0\Api\bin\ApplicationInsights.config
+G:\EasySender\Api 3.0\Api\bin\roslyn\csc.exe
+G:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\EasySender\Api 3.0\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\EasySender\Api 3.0\Api\bin\roslyn\System.Collections.Immutable.dll
+G:\EasySender\Api 3.0\Api\bin\roslyn\System.Reflection.Metadata.dll
+G:\EasySender\Api 3.0\Api\bin\roslyn\vbc.exe
+G:\EasySender\Api 3.0\Api\bin\roslyn\VBCSCompiler.exe
+G:\EasySender\Api 3.0\Api\bin\roslyn\VBCSCompiler.exe.config
+G:\EasySender\Api 3.0\Api\bin\Api.dll.config
+G:\EasySender\Api 3.0\Api\bin\Api.dll
+G:\EasySender\Api 3.0\Api\bin\Api.pdb
+G:\EasySender\Api 3.0\Api\bin\Antlr3.Runtime.dll
+G:\EasySender\Api 3.0\Api\bin\AutoMapper.dll
+G:\EasySender\Api 3.0\Api\bin\EntityFramework.dll
+G:\EasySender\Api 3.0\Api\bin\EntityFramework.SqlServer.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.Agent.Intercept.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.DependencyCollector.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.Web.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.WindowsServer.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.ApplicationInsights.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Core.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Cookies.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Facebook.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Google.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.OAuth.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Twitter.dll
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Web.Infrastructure.dll
+G:\EasySender\Api 3.0\Api\bin\Newtonsoft.Json.dll
+G:\EasySender\Api 3.0\Api\bin\Owin.dll
+G:\EasySender\Api 3.0\Api\bin\Swashbuckle.Core.dll
+G:\EasySender\Api 3.0\Api\bin\System.Net.Http.Formatting.dll
+G:\EasySender\Api 3.0\Api\bin\System.ValueTuple.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.Helpers.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.Http.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.Http.Owin.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.Http.WebHost.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.Mvc.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.Optimization.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.Razor.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.Deployment.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.dll
+G:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.Razor.dll
+G:\EasySender\Api 3.0\Api\bin\WebActivatorEx.dll
+G:\EasySender\Api 3.0\Api\bin\WebGrease.dll
+G:\EasySender\Api 3.0\Api\bin\AutoMapper.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.DependencyCollector.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.Web.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AI.WindowsServer.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.ApplicationInsights.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\EasySender\Api 3.0\Api\bin\Newtonsoft.Json.xml
+G:\EasySender\Api 3.0\Api\bin\System.Net.Http.Formatting.xml
+G:\EasySender\Api 3.0\Api\bin\System.ValueTuple.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.Http.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.Http.Owin.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.Http.WebHost.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.Helpers.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.Mvc.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.Optimization.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.Razor.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.Deployment.xml
+G:\EasySender\Api 3.0\Api\bin\System.Web.WebPages.Razor.xml
+G:\EasySender\Api 3.0\Api\bin\Antlr3.Runtime.pdb
+G:\EasySender\Api 3.0\Api\bin\EntityFramework.xml
+G:\EasySender\Api 3.0\Api\bin\EntityFramework.SqlServer.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Core.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Facebook.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Cookies.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.OAuth.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Google.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.Twitter.xml
+G:\EasySender\Api 3.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\EasySender\Api 3.0\Api\bin\it\System.Net.Http.Formatting.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.Http.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.Http.Owin.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.Http.WebHost.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.Helpers.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.Mvc.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.Optimization.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.Razor.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.WebPages.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\EntityFramework.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\EntityFramework.SqlServer.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+G:\EasySender\Api 3.0\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\ApplicationInsights.config
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\csc.exe
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\System.Collections.Immutable.dll
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\System.Reflection.Metadata.dll
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\vbc.exe
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\VBCSCompiler.exe
+F:\EasySender2.0\Api 3.0\Api\bin\roslyn\VBCSCompiler.exe.config
+F:\EasySender2.0\Api 3.0\Api\bin\Api.dll.config
+F:\EasySender2.0\Api 3.0\Api\bin\Api.XML
+F:\EasySender2.0\Api 3.0\Api\bin\Api.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Api.pdb
+F:\EasySender2.0\Api 3.0\Api\bin\Antlr3.Runtime.dll
+F:\EasySender2.0\Api 3.0\Api\bin\AutoMapper.dll
+F:\EasySender2.0\Api 3.0\Api\bin\EntityFramework.dll
+F:\EasySender2.0\Api 3.0\Api\bin\EntityFramework.SqlServer.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.Agent.Intercept.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.DependencyCollector.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.Web.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.WindowsServer.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.ApplicationInsights.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Core.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Cookies.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Facebook.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Google.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.OAuth.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Twitter.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Web.Infrastructure.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Newtonsoft.Json.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Owin.dll
+F:\EasySender2.0\Api 3.0\Api\bin\Swashbuckle.Core.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Net.Http.Formatting.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.ValueTuple.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Helpers.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.Owin.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.WebHost.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Mvc.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Optimization.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Razor.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.Deployment.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.Razor.dll
+F:\EasySender2.0\Api 3.0\Api\bin\WebActivatorEx.dll
+F:\EasySender2.0\Api 3.0\Api\bin\WebGrease.dll
+F:\EasySender2.0\Api 3.0\Api\bin\AutoMapper.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.DependencyCollector.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.Web.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.WindowsServer.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.ApplicationInsights.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Newtonsoft.Json.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Net.Http.Formatting.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.ValueTuple.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.Owin.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.WebHost.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Helpers.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Mvc.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Optimization.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Razor.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.Deployment.xml
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.Razor.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Antlr3.Runtime.pdb
+F:\EasySender2.0\Api 3.0\Api\bin\EntityFramework.xml
+F:\EasySender2.0\Api 3.0\Api\bin\EntityFramework.SqlServer.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Core.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Facebook.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Cookies.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.OAuth.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Google.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Twitter.xml
+F:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Net.Http.Formatting.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Http.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Http.Owin.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Http.WebHost.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Helpers.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Mvc.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Optimization.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Razor.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.WebPages.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\EntityFramework.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\EntityFramework.SqlServer.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+F:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\EasySender2.0\Api 3.0\Api\obj\Debug\Api.csprojAssemblyReference.cache
+F:\EasySender2.0\Api 3.0\Api\obj\Debug\Api.csproj.CoreCompileInputs.cache
+F:\EasySender2.0\Api 3.0\Api\obj\Debug\Api.csproj.CopyComplete
+F:\EasySender2.0\Api 3.0\Api\obj\Debug\Api.dll
+F:\EasySender2.0\Api 3.0\Api\obj\Debug\Api.pdb
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Cors.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.Cors.dll
+F:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.Cors.xml
+G:\EasySender2.0\Api 3.0\Api\bin\ApplicationInsights.config
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\csc.exe
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\System.Collections.Immutable.dll
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\System.Reflection.Metadata.dll
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\vbc.exe
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\VBCSCompiler.exe
+G:\EasySender2.0\Api 3.0\Api\bin\roslyn\VBCSCompiler.exe.config
+G:\EasySender2.0\Api 3.0\Api\bin\Api.dll.config
+G:\EasySender2.0\Api 3.0\Api\bin\Api.XML
+G:\EasySender2.0\Api 3.0\Api\bin\Api.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Api.pdb
+G:\EasySender2.0\Api 3.0\Api\bin\Antlr3.Runtime.dll
+G:\EasySender2.0\Api 3.0\Api\bin\AutoMapper.dll
+G:\EasySender2.0\Api 3.0\Api\bin\EntityFramework.dll
+G:\EasySender2.0\Api 3.0\Api\bin\EntityFramework.SqlServer.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.Agent.Intercept.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.DependencyCollector.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.Web.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.WindowsServer.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.ApplicationInsights.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Core.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Cookies.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Facebook.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Google.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.OAuth.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Twitter.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Web.Infrastructure.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Newtonsoft.Json.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Owin.dll
+G:\EasySender2.0\Api 3.0\Api\bin\Swashbuckle.Core.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Net.Http.Formatting.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.ValueTuple.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Cors.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Helpers.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.Cors.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.Owin.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.WebHost.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Mvc.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Optimization.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Razor.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.Deployment.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.dll
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.Razor.dll
+G:\EasySender2.0\Api 3.0\Api\bin\WebActivatorEx.dll
+G:\EasySender2.0\Api 3.0\Api\bin\WebGrease.dll
+G:\EasySender2.0\Api 3.0\Api\bin\AutoMapper.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.DependencyCollector.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.Web.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AI.WindowsServer.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.ApplicationInsights.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Newtonsoft.Json.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Net.Http.Formatting.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.ValueTuple.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.Cors.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.Owin.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Http.WebHost.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Helpers.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Mvc.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Optimization.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.Razor.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.Deployment.xml
+G:\EasySender2.0\Api 3.0\Api\bin\System.Web.WebPages.Razor.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Antlr3.Runtime.pdb
+G:\EasySender2.0\Api 3.0\Api\bin\EntityFramework.xml
+G:\EasySender2.0\Api 3.0\Api\bin\EntityFramework.SqlServer.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Core.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Facebook.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Cookies.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.OAuth.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Google.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.Twitter.xml
+G:\EasySender2.0\Api 3.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Net.Http.Formatting.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Http.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Http.Owin.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Http.WebHost.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Helpers.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Mvc.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Optimization.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.Razor.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.WebPages.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\EntityFramework.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\EntityFramework.SqlServer.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+G:\EasySender2.0\Api 3.0\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+G:\EasySender2.0\Api 3.0\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
+G:\EasySender2.0\Api 3.0\Api\obj\Debug\Api.dll
+G:\EasySender2.0\Api 3.0\Api\obj\Debug\Api.pdb
+F:\EasySender2.0\Api 4.0\Api\bin\Api.XML
+F:\EasySender2.0\Api 4.0\Api\obj\Debug\Api.csprojAssemblyReference.cache
+F:\EasySender2.0\Api 4.0\Api\obj\Debug\Api.csproj.CoreCompileInputs.cache
+F:\EasySender2.0\Api 4.0\Api\obj\Debug\Api.dll
+F:\EasySender2.0\Api 4.0\Api\obj\Debug\Api.pdb
+F:\EasySender2.0\Api 4.0\Api\bin\ApplicationInsights.config
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\csc.exe
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\System.Collections.Immutable.dll
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\System.Reflection.Metadata.dll
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\vbc.exe
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\VBCSCompiler.exe
+F:\EasySender2.0\Api 4.0\Api\bin\roslyn\VBCSCompiler.exe.config
+F:\EasySender2.0\Api 4.0\Api\bin\Api.dll.config
+F:\EasySender2.0\Api 4.0\Api\bin\Api.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Api.pdb
+F:\EasySender2.0\Api 4.0\Api\bin\Antlr3.Runtime.dll
+F:\EasySender2.0\Api 4.0\Api\bin\AutoMapper.dll
+F:\EasySender2.0\Api 4.0\Api\bin\EntityFramework.dll
+F:\EasySender2.0\Api 4.0\Api\bin\EntityFramework.SqlServer.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.Agent.Intercept.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.DependencyCollector.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.Web.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.WindowsServer.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.ApplicationInsights.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AspNet.Identity.Core.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.Cookies.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.Facebook.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.Google.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.OAuth.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.Twitter.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Web.Infrastructure.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Newtonsoft.Json.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Owin.dll
+F:\EasySender2.0\Api 4.0\Api\bin\Swashbuckle.Core.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Net.Http.Formatting.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.ValueTuple.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Cors.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Helpers.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Http.Cors.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Http.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Http.Owin.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Http.WebHost.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Mvc.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Optimization.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Razor.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.WebPages.Deployment.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.WebPages.dll
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.WebPages.Razor.dll
+F:\EasySender2.0\Api 4.0\Api\bin\WebActivatorEx.dll
+F:\EasySender2.0\Api 4.0\Api\bin\WebGrease.dll
+F:\EasySender2.0\Api 4.0\Api\bin\AutoMapper.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.DependencyCollector.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.Web.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AI.WindowsServer.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.ApplicationInsights.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Newtonsoft.Json.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Net.Http.Formatting.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.ValueTuple.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Http.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Http.Cors.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Http.Owin.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Http.WebHost.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Helpers.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Mvc.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Optimization.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.Razor.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.WebPages.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.WebPages.Deployment.xml
+F:\EasySender2.0\Api 4.0\Api\bin\System.Web.WebPages.Razor.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Antlr3.Runtime.pdb
+F:\EasySender2.0\Api 4.0\Api\bin\EntityFramework.xml
+F:\EasySender2.0\Api 4.0\Api\bin\EntityFramework.SqlServer.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AspNet.Identity.Core.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.Facebook.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.Cookies.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.OAuth.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.Google.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.Twitter.xml
+F:\EasySender2.0\Api 4.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Net.Http.Formatting.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.Http.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.Http.Owin.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.Http.WebHost.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.Helpers.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.Mvc.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.Optimization.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.Razor.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.WebPages.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\EntityFramework.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\EntityFramework.SqlServer.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.Owin.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.Owin.Security.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+F:\EasySender2.0\Api 4.0\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\EasySender2.0\Api 4.0\Api\obj\Debug\Api.csproj.CopyComplete
+F:\EasySender2.0\Api 5.0\Api\bin\ApplicationInsights.config
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\csc.exe
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\System.Collections.Immutable.dll
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\System.Reflection.Metadata.dll
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\vbc.exe
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\VBCSCompiler.exe
+F:\EasySender2.0\Api 5.0\Api\bin\roslyn\VBCSCompiler.exe.config
+F:\EasySender2.0\Api 5.0\Api\bin\Api.dll.config
+F:\EasySender2.0\Api 5.0\Api\bin\Api.XML
+F:\EasySender2.0\Api 5.0\Api\bin\Api.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Api.pdb
+F:\EasySender2.0\Api 5.0\Api\bin\Antlr3.Runtime.dll
+F:\EasySender2.0\Api 5.0\Api\bin\AutoMapper.dll
+F:\EasySender2.0\Api 5.0\Api\bin\EntityFramework.dll
+F:\EasySender2.0\Api 5.0\Api\bin\EntityFramework.SqlServer.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.Agent.Intercept.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.DependencyCollector.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.Web.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.WindowsServer.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.ApplicationInsights.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AspNet.Identity.Core.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.Cookies.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.Facebook.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.Google.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.OAuth.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.Twitter.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Web.Infrastructure.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Newtonsoft.Json.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Owin.dll
+F:\EasySender2.0\Api 5.0\Api\bin\Swashbuckle.Core.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Net.Http.Formatting.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.ValueTuple.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Cors.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Helpers.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Http.Cors.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Http.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Http.Owin.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Http.WebHost.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Mvc.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Optimization.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Razor.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.WebPages.Deployment.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.WebPages.dll
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.WebPages.Razor.dll
+F:\EasySender2.0\Api 5.0\Api\bin\WebActivatorEx.dll
+F:\EasySender2.0\Api 5.0\Api\bin\WebGrease.dll
+F:\EasySender2.0\Api 5.0\Api\bin\AutoMapper.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.DependencyCollector.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.Web.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AI.WindowsServer.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.ApplicationInsights.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Newtonsoft.Json.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Net.Http.Formatting.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.ValueTuple.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Http.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Http.Cors.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Http.Owin.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Http.WebHost.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Helpers.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Mvc.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Optimization.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.Razor.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.WebPages.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.WebPages.Deployment.xml
+F:\EasySender2.0\Api 5.0\Api\bin\System.Web.WebPages.Razor.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Antlr3.Runtime.pdb
+F:\EasySender2.0\Api 5.0\Api\bin\EntityFramework.xml
+F:\EasySender2.0\Api 5.0\Api\bin\EntityFramework.SqlServer.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AspNet.Identity.Core.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.Facebook.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.Cookies.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.OAuth.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.Google.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.Twitter.xml
+F:\EasySender2.0\Api 5.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Net.Http.Formatting.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.Http.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.Http.Owin.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.Http.WebHost.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.Helpers.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.Mvc.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.Optimization.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.Razor.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.WebPages.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\EntityFramework.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\EntityFramework.SqlServer.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.Owin.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.Owin.Security.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+F:\EasySender2.0\Api 5.0\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\EasySender2.0\Api 5.0\Api\obj\Debug\Api.csprojAssemblyReference.cache
+F:\EasySender2.0\Api 5.0\Api\obj\Debug\Api.csproj.CoreCompileInputs.cache
+F:\EasySender2.0\Api 5.0\Api\obj\Debug\Api.csproj.CopyComplete
+F:\EasySender2.0\Api 5.0\Api\obj\Debug\Api.dll
+F:\EasySender2.0\Api 5.0\Api\obj\Debug\Api.pdb
+F:\EasySender2.0\Api 5.0\Api\bin\GemBox.Document.dll
+F:\EasySender2.0\Api 5.0\Api\bin\GemBox.Pdf.dll
+F:\EasySender2.0\Api 5.0\Api\bin\GemBox.Document.xml
+F:\EasySender2.0\Api 5.0\Api\bin\GemBox.Pdf.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Api.XML
+F:\EasySender2.0\Api 6.0\Api\obj\Debug\Api.csprojAssemblyReference.cache
+F:\EasySender2.0\Api 6.0\Api\obj\Debug\Api.csproj.CoreCompileInputs.cache
+F:\EasySender2.0\Api 6.0\Api\obj\Debug\Api.dll
+F:\EasySender2.0\Api 6.0\Api\obj\Debug\Api.pdb
+F:\EasySender2.0\Api 6.0\Api\bin\ApplicationInsights.config
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\csc.exe
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\System.Collections.Immutable.dll
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\System.Reflection.Metadata.dll
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\vbc.exe
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\VBCSCompiler.exe
+F:\EasySender2.0\Api 6.0\Api\bin\roslyn\VBCSCompiler.exe.config
+F:\EasySender2.0\Api 6.0\Api\bin\Api.dll.config
+F:\EasySender2.0\Api 6.0\Api\bin\Api.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Api.pdb
+F:\EasySender2.0\Api 6.0\Api\bin\Antlr3.Runtime.dll
+F:\EasySender2.0\Api 6.0\Api\bin\AutoMapper.dll
+F:\EasySender2.0\Api 6.0\Api\bin\EntityFramework.dll
+F:\EasySender2.0\Api 6.0\Api\bin\EntityFramework.SqlServer.dll
+F:\EasySender2.0\Api 6.0\Api\bin\GemBox.Document.dll
+F:\EasySender2.0\Api 6.0\Api\bin\GemBox.Pdf.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.Agent.Intercept.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.DependencyCollector.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.Web.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.WindowsServer.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.ApplicationInsights.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AspNet.Identity.Core.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.Cookies.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.Facebook.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.Google.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.OAuth.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.Twitter.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Web.Infrastructure.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Newtonsoft.Json.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Owin.dll
+F:\EasySender2.0\Api 6.0\Api\bin\Swashbuckle.Core.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Net.Http.Formatting.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.ValueTuple.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Cors.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Helpers.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Http.Cors.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Http.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Http.Owin.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Http.WebHost.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Mvc.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Optimization.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Razor.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.WebPages.Deployment.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.WebPages.dll
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.WebPages.Razor.dll
+F:\EasySender2.0\Api 6.0\Api\bin\WebActivatorEx.dll
+F:\EasySender2.0\Api 6.0\Api\bin\WebGrease.dll
+F:\EasySender2.0\Api 6.0\Api\bin\AutoMapper.xml
+F:\EasySender2.0\Api 6.0\Api\bin\GemBox.Document.xml
+F:\EasySender2.0\Api 6.0\Api\bin\GemBox.Pdf.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.DependencyCollector.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.Web.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AI.WindowsServer.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.ApplicationInsights.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Newtonsoft.Json.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Net.Http.Formatting.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.ValueTuple.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Http.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Http.Cors.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Http.Owin.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Http.WebHost.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Helpers.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Mvc.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Optimization.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.Razor.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.WebPages.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.WebPages.Deployment.xml
+F:\EasySender2.0\Api 6.0\Api\bin\System.Web.WebPages.Razor.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Antlr3.Runtime.pdb
+F:\EasySender2.0\Api 6.0\Api\bin\EntityFramework.xml
+F:\EasySender2.0\Api 6.0\Api\bin\EntityFramework.SqlServer.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AspNet.Identity.Core.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.Facebook.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.Cookies.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.OAuth.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.Google.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.Twitter.xml
+F:\EasySender2.0\Api 6.0\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Net.Http.Formatting.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.Http.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.Http.Owin.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.Http.WebHost.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.Helpers.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.Mvc.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.Optimization.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.Razor.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.WebPages.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\EntityFramework.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\EntityFramework.SqlServer.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.Owin.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.Owin.Security.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+F:\EasySender2.0\Api 6.0\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\EasySender2.0\Api 6.0\Api\obj\Debug\Api.csproj.CopyComplete
+F:\EasySender2.0\Api 6.1\Api\bin\ApplicationInsights.config
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\csc.exe
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\System.Collections.Immutable.dll
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\System.Reflection.Metadata.dll
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\vbc.exe
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\VBCSCompiler.exe
+F:\EasySender2.0\Api 6.1\Api\bin\roslyn\VBCSCompiler.exe.config
+F:\EasySender2.0\Api 6.1\Api\bin\Api.dll.config
+F:\EasySender2.0\Api 6.1\Api\bin\Api.XML
+F:\EasySender2.0\Api 6.1\Api\bin\Api.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Api.pdb
+F:\EasySender2.0\Api 6.1\Api\bin\Antlr3.Runtime.dll
+F:\EasySender2.0\Api 6.1\Api\bin\AutoMapper.dll
+F:\EasySender2.0\Api 6.1\Api\bin\EntityFramework.dll
+F:\EasySender2.0\Api 6.1\Api\bin\EntityFramework.SqlServer.dll
+F:\EasySender2.0\Api 6.1\Api\bin\GemBox.Document.dll
+F:\EasySender2.0\Api 6.1\Api\bin\GemBox.Pdf.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.Agent.Intercept.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.DependencyCollector.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.Web.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.WindowsServer.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.ApplicationInsights.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AspNet.Identity.Core.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.Cookies.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.Facebook.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.Google.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.OAuth.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.Twitter.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Web.Infrastructure.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Newtonsoft.Json.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Owin.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Swashbuckle.Core.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Net.Http.Formatting.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.ValueTuple.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Cors.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Helpers.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Http.Cors.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Http.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Http.Owin.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Http.WebHost.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Mvc.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Optimization.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Razor.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.WebPages.Deployment.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.WebPages.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.WebPages.Razor.dll
+F:\EasySender2.0\Api 6.1\Api\bin\WebActivatorEx.dll
+F:\EasySender2.0\Api 6.1\Api\bin\WebGrease.dll
+F:\EasySender2.0\Api 6.1\Api\bin\AutoMapper.xml
+F:\EasySender2.0\Api 6.1\Api\bin\GemBox.Document.xml
+F:\EasySender2.0\Api 6.1\Api\bin\GemBox.Pdf.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.DependencyCollector.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.Web.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AI.WindowsServer.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.ApplicationInsights.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Newtonsoft.Json.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Net.Http.Formatting.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.ValueTuple.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Http.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Http.Cors.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Http.Owin.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Http.WebHost.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Helpers.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Mvc.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Optimization.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.Razor.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.WebPages.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.WebPages.Deployment.xml
+F:\EasySender2.0\Api 6.1\Api\bin\System.Web.WebPages.Razor.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Antlr3.Runtime.pdb
+F:\EasySender2.0\Api 6.1\Api\bin\EntityFramework.xml
+F:\EasySender2.0\Api 6.1\Api\bin\EntityFramework.SqlServer.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AspNet.Identity.Core.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.Facebook.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.Cookies.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.OAuth.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.Google.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.Twitter.xml
+F:\EasySender2.0\Api 6.1\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Net.Http.Formatting.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.Http.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.Http.Owin.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.Http.WebHost.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.Helpers.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.Mvc.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.Optimization.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.Razor.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.WebPages.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\EntityFramework.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\EntityFramework.SqlServer.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.Owin.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.Owin.Security.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+F:\EasySender2.0\Api 6.1\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\EasySender2.0\Api 6.1\Api\obj\Debug\Api.csprojAssemblyReference.cache
+F:\EasySender2.0\Api 6.1\Api\obj\Debug\Api.csproj.CoreCompileInputs.cache
+F:\EasySender2.0\Api 6.1\Api\obj\Debug\Api.csproj.CopyComplete
+F:\EasySender2.0\Api 6.1\Api\obj\Debug\Api.dll
+F:\EasySender2.0\Api 6.1\Api\obj\Debug\Api.pdb
+F:\EasySender2.0\Api 6.1\Api\bin\OpenPop.dll
+F:\EasySender2.0\Api 6.1\Api\bin\Pop3Client.dll
+F:\EasySender2.0\Api 6.1\Api\bin\System.Net.Pop3.dll
+F:\EasySender2.0\Api 6.1\Api\bin\GemBox.Email.dll
+F:\EasySender2.0\Api 6.1\Api\bin\GemBox.Email.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Api.XML
+F:\EasySender2.0\Api Condivise\Api\bin\ApplicationInsights.config
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\csc.exe
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\System.Collections.Immutable.dll
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\System.Reflection.Metadata.dll
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\vbc.exe
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\VBCSCompiler.exe
+F:\EasySender2.0\Api Condivise\Api\bin\roslyn\VBCSCompiler.exe.config
+F:\EasySender2.0\Api Condivise\Api\bin\Api.dll.config
+F:\EasySender2.0\Api Condivise\Api\bin\Api.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Api.pdb
+F:\EasySender2.0\Api Condivise\Api\bin\Antlr3.Runtime.dll
+F:\EasySender2.0\Api Condivise\Api\bin\AutoMapper.dll
+F:\EasySender2.0\Api Condivise\Api\bin\EntityFramework.dll
+F:\EasySender2.0\Api Condivise\Api\bin\EntityFramework.SqlServer.dll
+F:\EasySender2.0\Api Condivise\Api\bin\GemBox.Document.dll
+F:\EasySender2.0\Api Condivise\Api\bin\GemBox.Email.dll
+F:\EasySender2.0\Api Condivise\Api\bin\GemBox.Pdf.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.Agent.Intercept.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.DependencyCollector.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.Web.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.WindowsServer.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.ApplicationInsights.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AspNet.Identity.Core.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.Cookies.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.Facebook.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.Google.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.OAuth.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.Twitter.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Web.Infrastructure.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Newtonsoft.Json.dll
+F:\EasySender2.0\Api Condivise\Api\bin\OpenPop.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Owin.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Pop3Client.dll
+F:\EasySender2.0\Api Condivise\Api\bin\Swashbuckle.Core.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Net.Http.Formatting.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Net.Pop3.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.ValueTuple.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Cors.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Helpers.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Http.Cors.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Http.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Http.Owin.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Http.WebHost.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Mvc.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Optimization.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Razor.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.WebPages.Deployment.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.WebPages.dll
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.WebPages.Razor.dll
+F:\EasySender2.0\Api Condivise\Api\bin\WebActivatorEx.dll
+F:\EasySender2.0\Api Condivise\Api\bin\WebGrease.dll
+F:\EasySender2.0\Api Condivise\Api\bin\AutoMapper.xml
+F:\EasySender2.0\Api Condivise\Api\bin\GemBox.Document.xml
+F:\EasySender2.0\Api Condivise\Api\bin\GemBox.Email.xml
+F:\EasySender2.0\Api Condivise\Api\bin\GemBox.Pdf.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.DependencyCollector.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.Web.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AI.WindowsServer.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.ApplicationInsights.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Newtonsoft.Json.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Net.Http.Formatting.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.ValueTuple.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Http.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Http.Cors.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Http.Owin.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Http.WebHost.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Helpers.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Mvc.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Optimization.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.Razor.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.WebPages.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.WebPages.Deployment.xml
+F:\EasySender2.0\Api Condivise\Api\bin\System.Web.WebPages.Razor.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Antlr3.Runtime.pdb
+F:\EasySender2.0\Api Condivise\Api\bin\EntityFramework.xml
+F:\EasySender2.0\Api Condivise\Api\bin\EntityFramework.SqlServer.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AspNet.Identity.Core.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.Facebook.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.Cookies.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.OAuth.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.Google.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.Twitter.xml
+F:\EasySender2.0\Api Condivise\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Net.Http.Formatting.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.Http.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.Http.Owin.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.Http.WebHost.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.Helpers.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.Mvc.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.Optimization.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.Razor.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.WebPages.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.WebPages.Deployment.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\System.Web.WebPages.Razor.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\EntityFramework.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\EntityFramework.SqlServer.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.AspNet.Identity.Core.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.AspNet.Identity.Owin.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.Owin.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.Owin.Host.SystemWeb.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.Owin.Security.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.Owin.Security.Facebook.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.Owin.Security.Google.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.Owin.Security.Twitter.resources.dll
+F:\EasySender2.0\Api Condivise\Api\bin\it\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\EasySender2.0\Api Condivise\Api\obj\Debug\Api.csproj.CopyComplete
+F:\EasySender2.0\Api Condivise\Api\obj\Debug\Api.dll
+F:\EasySender2.0\Api Condivise\Api\obj\Debug\Api.pdb

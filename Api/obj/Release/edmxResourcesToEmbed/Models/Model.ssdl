@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApiH2HModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AddressBookUsers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bulletins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="namesId" Type="int" Nullable="false" />
+    <Property Name="NumeroContoCorrente" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IntestatoA" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FormatoStampa" Type="nvarchar(max)" />
+    <Property Name="Template" Type="nvarchar(max)" />
+    <Property Name="AdditionalInfo" Type="nvarchar(max)" />
+    <Property Name="IBAN" Type="nvarchar(max)" />
+    <Property Name="CodiceCliente" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ImportoEuro" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="EseguitoDaNominativo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EseguitoDaIndirizzo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EseguitoDaCAP" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EseguitoDaLocalita" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Causale" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BulletinType" Type="int" Nullable="false" />
+    <Property Name="namesListsId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConfigurationPecUsers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="pecTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dm">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="productId" Type="int" Nullable="false" />
+    <Property Name="haveCreativity" Type="bit" Nullable="false" />
+    <Property Name="recipientsType" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="numberOfNames" Type="int" Nullable="false" />
+    <Property Name="netPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="vatPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="totalPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="sessionUser" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="paymentMethod" Type="int" />
+    <Property Name="complete" Type="bit" Nullable="false" />
+    <Property Name="paid" Type="bit" Nullable="false" />
+    <Property Name="userParentId" Type="int" />
+  </EntityType>
+  <EntityType Name="DmConfigurations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dmId" Type="int" Nullable="false" />
+    <Property Name="DiCosaSiOccupaLAzienda" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ObiettivoPrincipale" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Target" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ElementiPrincipali" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Logo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="sessionUser" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'ApiH2H.dbo.DmProducts'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="DmProducts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="productName" Type="nvarchar" MaxLength="550" />
+    <Property Name="productDescription" Type="nvarchar(max)" />
+    <Property Name="productDetails" Type="nvarchar(max)" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Listini">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="productId" Type="int" Nullable="false" />
+    <Property Name="creativita" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="distrubuzione" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="liste" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="stampa500" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="stampa1000" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="stampa2000" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="stampa3000" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="stampa4000" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="stampa5000" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Lists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="550" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="temporary" Type="bit" Nullable="false" />
+    <Property Name="userParentId" Type="int" />
+  </EntityType>
+  <EntityType Name="Names">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="businessName" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="complementNames" Type="nvarchar(max)" />
+    <Property Name="complementAddress" Type="nvarchar(max)" />
+    <Property Name="dug" Type="nvarchar" MaxLength="10" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="cap" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="insertDate" Type="datetime" Nullable="false" />
+    <Property Name="currentState" Type="int" Nullable="false" />
+    <Property Name="valid" Type="bit" Nullable="false" />
+    <Property Name="operationId" Type="int" Nullable="false" />
+    <Property Name="requestId" Type="nvarchar(max)" />
+    <Property Name="orderId" Type="nvarchar(max)" />
+    <Property Name="codice" Type="nvarchar(max)" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="vatPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="totalPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="attachedFile" Type="varbinary(max)" />
+    <Property Name="fileName" Type="nvarchar(max)" />
+    <Property Name="presaInCaricoDate" Type="datetime" />
+    <Property Name="consegnatoDate" Type="datetime" />
+    <Property Name="stato" Type="nvarchar" MaxLength="550" />
+    <Property Name="guidUser" Type="nvarchar" MaxLength="550" />
+    <Property Name="tipoStampa" Type="bit" />
+    <Property Name="fronteRetro" Type="bit" />
+    <Property Name="ricevutaRitorno" Type="bit" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="reSendGuid" Type="uniqueidentifier" />
+    <Property Name="fiscalCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NamesDm">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="businessName" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="complementNames" Type="nvarchar(max)" />
+    <Property Name="complementAddress" Type="nvarchar(max)" />
+    <Property Name="dug" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="cap" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="dmId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NamesLists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="businessName" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="complementNames" Type="nvarchar(max)" />
+    <Property Name="complementAddress" Type="nvarchar(max)" />
+    <Property Name="dug" Type="nvarchar" MaxLength="10" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="cap" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="listId" Type="int" Nullable="false" />
+    <Property Name="fileName" Type="nvarchar(max)" />
+    <Property Name="fiscalCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Notifications">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="550" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="enabled" Type="bit" Nullable="false" />
+    <Property Name="usersId" Type="nvarchar(max)" />
+    <Property Name="notificationType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="operationFeatures">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="operationId" Type="int" Nullable="false" />
+    <Property Name="featureType" Type="nvarchar" MaxLength="550" Nullable="false" />
+    <Property Name="featureValue" Type="nvarchar" MaxLength="550" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Operations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="operationType" Type="int" Nullable="false" />
+    <Property Name="demoOperation" Type="bit" Nullable="false" />
+    <Property Name="complete" Type="bit" Nullable="false" />
+    <Property Name="userParentId" Type="int" />
+    <Property Name="areaTestOperation" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PecEmailSend">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="fromEmail" Type="nvarchar" MaxLength="350" Nullable="false" />
+    <Property Name="toEmail" Type="nvarchar" MaxLength="350" Nullable="false" />
+    <Property Name="ccEmail" Type="nvarchar(max)" />
+    <Property Name="object" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="body" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="attachment" Type="nvarchar(max)" />
+    <Property Name="PecTypeId" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="attachmentName" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="PecType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PecName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="smtp" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="port" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="550" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Senders">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="350" />
+    <Property Name="surname" Type="nvarchar" MaxLength="350" />
+    <Property Name="businessName" Type="nvarchar(max)" />
+    <Property Name="dug" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="nvarchar" MaxLength="5" />
+    <Property Name="cap" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="350" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="operationId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SendersUsers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="350" />
+    <Property Name="surname" Type="nvarchar" MaxLength="350" />
+    <Property Name="businessName" Type="nvarchar(max)" />
+    <Property Name="dug" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="nvarchar" MaxLength="5" />
+    <Property Name="cap" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="350" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="userParentId" Type="int" />
+    <Property Name="temporary" Type="bit" />
+  </EntityType>
+  <EntityType Name="SmsLists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="valueMin" Type="int" Nullable="false" />
+    <Property Name="valueMax" Type="int" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SmsUsers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="errcode" Type="nvarchar" MaxLength="550" />
+    <Property Name="extrainfo" Type="nvarchar(max)" />
+    <Property Name="targetcode" Type="nvarchar" MaxLength="550" />
+    <Property Name="dlr_ok" Type="int" Nullable="false" />
+    <Property Name="dlr_ko" Type="int" Nullable="false" />
+    <Property Name="dlr_wait" Type="int" Nullable="false" />
+    <Property Name="message" Type="nvarchar(max)" />
+    <Property Name="sender" Type="nvarchar" MaxLength="550" />
+    <Property Name="startdate" Type="date" Nullable="false" />
+    <Property Name="upperlimit" Type="nvarchar" MaxLength="550" />
+    <Property Name="date" Type="date" Nullable="false" />
+    <Property Name="paid" Type="bit" Nullable="false" />
+    <Property Name="paymentMethod" Type="int" />
+    <Property Name="planned" Type="bit" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="vat" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="total" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="userParentId" Type="int" />
+  </EntityType>
+  <EntityType Name="TemporaryValidateTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="sessionId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="valid" Type="bit" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="totalNames" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usernamePoste" Type="nvarchar" MaxLength="350" />
+    <Property Name="pwdPoste" Type="nvarchar" MaxLength="350" />
+    <Property Name="porpertyId" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="lastName" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="userType" Type="int" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="guidUser" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="businessName" Type="nvarchar" MaxLength="550" Nullable="false" />
+    <Property Name="baseUrl" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="pwd" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="cap" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="demoUser" Type="bit" Nullable="false" />
+    <Property Name="parentId" Type="int" Nullable="false" />
+    <Property Name="sendersId" Type="nvarchar(max)" />
+    <Property Name="usernamePosteAreaTest" Type="nvarchar" MaxLength="350" />
+    <Property Name="pwdPosteAreaTest" Type="nvarchar" MaxLength="350" />
+    <Property Name="areaTestUser" Type="bit" Nullable="false" />
+    <Property Name="molCol" Type="bit" />
+    <Property Name="CodiceContrattoMOL" Type="nvarchar" MaxLength="350" />
+    <Property Name="CodiceContrattoCOL" Type="nvarchar" MaxLength="350" />
+  </EntityType>
+  <Association Name="FK_AddressBookUsers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AddressBookUsers" Type="Self.AddressBookUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="AddressBookUsers">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigurationPecUsers_PecType">
+    <End Role="PecType" Type="Self.PecType" Multiplicity="1" />
+    <End Role="ConfigurationPecUsers" Type="Self.ConfigurationPecUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PecType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ConfigurationPecUsers">
+        <PropertyRef Name="pecTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigurationPecUsers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ConfigurationPecUsers" Type="Self.ConfigurationPecUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ConfigurationPecUsers">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dm_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Dm" Type="Self.Dm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Dm">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DmConfigurations_Dm">
+    <End Role="Dm" Type="Self.Dm" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DmConfigurations" Type="Self.DmConfigurations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dm">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DmConfigurations">
+        <PropertyRef Name="dmId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Listini_Listini">
+    <End Role="Listini" Type="Self.Listini" Multiplicity="1" />
+    <End Role="Listini1" Type="Self.Listini" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Listini">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Listini1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Lists_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Lists" Type="Self.Lists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Lists">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Names_Operations">
+    <End Role="Operations" Type="Self.Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Names" Type="Self.Names" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Names">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NamesDm_Dm">
+    <End Role="Dm" Type="Self.Dm" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="NamesDm" Type="Self.NamesDm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dm">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="NamesDm">
+        <PropertyRef Name="dmId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NamesLists_Lists">
+    <End Role="Lists" Type="Self.Lists" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="NamesLists" Type="Self.NamesLists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lists">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="NamesLists">
+        <PropertyRef Name="listId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_operationFeatures_Operations">
+    <End Role="Operations" Type="Self.Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="operationFeatures" Type="Self.operationFeatures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operationFeatures">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Operations_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Operations" Type="Self.Operations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Operations">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PecEmailSend_PecType">
+    <End Role="PecType" Type="Self.PecType" Multiplicity="1" />
+    <End Role="PecEmailSend" Type="Self.PecEmailSend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PecType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PecEmailSend">
+        <PropertyRef Name="PecTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PecEmailSend_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PecEmailSend" Type="Self.PecEmailSend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PecEmailSend">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Senders_Operations">
+    <End Role="Operations" Type="Self.Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Senders" Type="Self.Senders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Senders">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SendersUsers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="SendersUsers" Type="Self.SendersUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SendersUsers">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SmsUsers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SmsUsers" Type="Self.SmsUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SmsUsers">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TemporaryValidateTable_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TemporaryValidateTable" Type="Self.TemporaryValidateTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TemporaryValidateTable">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Property">
+    <End Role="Property" Type="Self.Property" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="porpertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ApiH2HModelStoreContainer">
+    <EntitySet Name="AddressBookUsers" EntityType="Self.AddressBookUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bulletins" EntityType="Self.Bulletins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConfigurationPecUsers" EntityType="Self.ConfigurationPecUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm" EntityType="Self.Dm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DmConfigurations" EntityType="Self.DmConfigurations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Listini" EntityType="Self.Listini" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lists" EntityType="Self.Lists" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Names" EntityType="Self.Names" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NamesDm" EntityType="Self.NamesDm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NamesLists" EntityType="Self.NamesLists" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notifications" EntityType="Self.Notifications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="operationFeatures" EntityType="Self.operationFeatures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Operations" EntityType="Self.Operations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PecEmailSend" EntityType="Self.PecEmailSend" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PecType" EntityType="Self.PecType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Property" EntityType="Self.Property" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Senders" EntityType="Self.Senders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SendersUsers" EntityType="Self.SendersUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SmsLists" EntityType="Self.SmsLists" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SmsUsers" EntityType="Self.SmsUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TemporaryValidateTable" EntityType="Self.TemporaryValidateTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DmProducts" EntityType="Self.DmProducts" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DmProducts].[id] AS [id], 
+    [DmProducts].[productName] AS [productName], 
+    [DmProducts].[productDescription] AS [productDescription], 
+    [DmProducts].[productDetails] AS [productDetails], 
+    [DmProducts].[active] AS [active]
+    FROM [dbo].[DmProducts] AS [DmProducts]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_AddressBookUsers_Users" Association="Self.FK_AddressBookUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AddressBookUsers" EntitySet="AddressBookUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigurationPecUsers_PecType" Association="Self.FK_ConfigurationPecUsers_PecType">
+      <End Role="PecType" EntitySet="PecType" />
+      <End Role="ConfigurationPecUsers" EntitySet="ConfigurationPecUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigurationPecUsers_Users" Association="Self.FK_ConfigurationPecUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ConfigurationPecUsers" EntitySet="ConfigurationPecUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dm_Users" Association="Self.FK_Dm_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Dm" EntitySet="Dm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DmConfigurations_Dm" Association="Self.FK_DmConfigurations_Dm">
+      <End Role="Dm" EntitySet="Dm" />
+      <End Role="DmConfigurations" EntitySet="DmConfigurations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Listini_Listini" Association="Self.FK_Listini_Listini">
+      <End Role="Listini" EntitySet="Listini" />
+      <End Role="Listini1" EntitySet="Listini" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Lists_Users" Association="Self.FK_Lists_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Lists" EntitySet="Lists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Names_Operations" Association="Self.FK_Names_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="Names" EntitySet="Names" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NamesDm_Dm" Association="Self.FK_NamesDm_Dm">
+      <End Role="Dm" EntitySet="Dm" />
+      <End Role="NamesDm" EntitySet="NamesDm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NamesLists_Lists" Association="Self.FK_NamesLists_Lists">
+      <End Role="Lists" EntitySet="Lists" />
+      <End Role="NamesLists" EntitySet="NamesLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_operationFeatures_Operations" Association="Self.FK_operationFeatures_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="operationFeatures" EntitySet="operationFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Operations_Users" Association="Self.FK_Operations_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Operations" EntitySet="Operations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PecEmailSend_PecType" Association="Self.FK_PecEmailSend_PecType">
+      <End Role="PecType" EntitySet="PecType" />
+      <End Role="PecEmailSend" EntitySet="PecEmailSend" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PecEmailSend_Users" Association="Self.FK_PecEmailSend_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="PecEmailSend" EntitySet="PecEmailSend" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Senders_Operations" Association="Self.FK_Senders_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="Senders" EntitySet="Senders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SendersUsers_Users" Association="Self.FK_SendersUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SendersUsers" EntitySet="SendersUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SmsUsers_Users" Association="Self.FK_SmsUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SmsUsers" EntitySet="SmsUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TemporaryValidateTable_Users" Association="Self.FK_TemporaryValidateTable_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TemporaryValidateTable" EntitySet="TemporaryValidateTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Property" Association="Self.FK_Users_Property">
+      <End Role="Property" EntitySet="Property" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

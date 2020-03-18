@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApiH2HModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bulletins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="namesId" Type="int" Nullable="false" />
+    <Property Name="NumeroContoCorrente" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IntestatoA" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FormatoStampa" Type="nvarchar(max)" />
+    <Property Name="Template" Type="nvarchar(max)" />
+    <Property Name="AdditionalInfo" Type="nvarchar(max)" />
+    <Property Name="IBAN" Type="nvarchar(max)" />
+    <Property Name="CodiceCliente" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ImportoEuro" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="EseguitoDaNominativo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EseguitoDaIndirizzo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EseguitoDaCAP" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EseguitoDaLocalita" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Causale" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BulletinType" Type="int" Nullable="false" />
+    <Property Name="namesListsId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'ApiH2H.dbo.DmProducts'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="Names">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="businessName" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="complementNames" Type="nvarchar(max)" />
+    <Property Name="complementAddress" Type="nvarchar(max)" />
+    <Property Name="dug" Type="nvarchar" MaxLength="10" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="cap" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="insertDate" Type="datetime" Nullable="false" />
+    <Property Name="currentState" Type="int" Nullable="false" />
+    <Property Name="valid" Type="bit" Nullable="false" />
+    <Property Name="operationId" Type="int" Nullable="false" />
+    <Property Name="requestId" Type="nvarchar(max)" />
+    <Property Name="orderId" Type="nvarchar(max)" />
+    <Property Name="codice" Type="nvarchar(max)" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="vatPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="totalPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="attachedFile" Type="varbinary(max)" />
+    <Property Name="fileName" Type="nvarchar(max)" />
+    <Property Name="presaInCaricoDate" Type="datetime" />
+    <Property Name="consegnatoDate" Type="datetime" />
+    <Property Name="stato" Type="nvarchar" MaxLength="550" />
+    <Property Name="guidUser" Type="nvarchar" MaxLength="550" />
+    <Property Name="tipoStampa" Type="bit" />
+    <Property Name="fronteRetro" Type="bit" />
+    <Property Name="ricevutaRitorno" Type="bit" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="reSendGuid" Type="uniqueidentifier" />
+    <Property Name="fiscalCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="operationFeatures">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="operationId" Type="int" Nullable="false" />
+    <Property Name="featureType" Type="nvarchar" MaxLength="550" Nullable="false" />
+    <Property Name="featureValue" Type="nvarchar" MaxLength="550" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Operations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="operationType" Type="int" Nullable="false" />
+    <Property Name="demoOperation" Type="bit" Nullable="false" />
+    <Property Name="complete" Type="bit" Nullable="false" />
+    <Property Name="userParentId" Type="int" />
+    <Property Name="areaTestOperation" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="550" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Senders">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="350" />
+    <Property Name="surname" Type="nvarchar" MaxLength="350" />
+    <Property Name="businessName" Type="nvarchar(max)" />
+    <Property Name="dug" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="nvarchar" MaxLength="5" />
+    <Property Name="cap" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="350" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="operationId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SendersUsers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="350" />
+    <Property Name="surname" Type="nvarchar" MaxLength="350" />
+    <Property Name="businessName" Type="nvarchar(max)" />
+    <Property Name="dug" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="nvarchar" MaxLength="5" />
+    <Property Name="cap" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="350" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="userParentId" Type="int" />
+    <Property Name="temporary" Type="bit" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usernamePoste" Type="nvarchar" MaxLength="350" />
+    <Property Name="pwdPoste" Type="nvarchar" MaxLength="350" />
+    <Property Name="porpertyId" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="lastName" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="userType" Type="int" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="guidUser" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="businessName" Type="nvarchar" MaxLength="550" Nullable="false" />
+    <Property Name="baseUrl" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="pwd" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="cap" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="province" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="demoUser" Type="bit" Nullable="false" />
+    <Property Name="parentId" Type="int" Nullable="false" />
+    <Property Name="sendersId" Type="nvarchar(max)" />
+    <Property Name="usernamePosteAreaTest" Type="nvarchar" MaxLength="350" />
+    <Property Name="pwdPosteAreaTest" Type="nvarchar" MaxLength="350" />
+    <Property Name="areaTestUser" Type="bit" Nullable="false" />
+    <Property Name="molCol" Type="bit" />
+    <Property Name="CodiceContrattoMOL" Type="nvarchar" MaxLength="350" />
+    <Property Name="CodiceContrattoCOL" Type="nvarchar" MaxLength="350" />
+  </EntityType>
+  <Association Name="FK_Names_Operations">
+    <End Role="Operations" Type="Self.Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Names" Type="Self.Names" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Names">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_operationFeatures_Operations">
+    <End Role="Operations" Type="Self.Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="operationFeatures" Type="Self.operationFeatures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operationFeatures">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Operations_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Operations" Type="Self.Operations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Operations">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Senders_Operations">
+    <End Role="Operations" Type="Self.Operations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Senders" Type="Self.Senders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operations">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Senders">
+        <PropertyRef Name="operationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SendersUsers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="SendersUsers" Type="Self.SendersUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SendersUsers">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Property">
+    <End Role="Property" Type="Self.Property" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="porpertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ApiH2HModelStoreContainer">
+    <EntitySet Name="Bulletins" EntityType="Self.Bulletins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Names" EntityType="Self.Names" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="operationFeatures" EntityType="Self.operationFeatures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Operations" EntityType="Self.Operations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Property" EntityType="Self.Property" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Senders" EntityType="Self.Senders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SendersUsers" EntityType="Self.SendersUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Names_Operations" Association="Self.FK_Names_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="Names" EntitySet="Names" />
+    </AssociationSet>
+    <AssociationSet Name="FK_operationFeatures_Operations" Association="Self.FK_operationFeatures_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="operationFeatures" EntitySet="operationFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Operations_Users" Association="Self.FK_Operations_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Operations" EntitySet="Operations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Senders_Operations" Association="Self.FK_Senders_Operations">
+      <End Role="Operations" EntitySet="Operations" />
+      <End Role="Senders" EntitySet="Senders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SendersUsers_Users" Association="Self.FK_SendersUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SendersUsers" EntitySet="SendersUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Property" Association="Self.FK_Users_Property">
+      <End Role="Property" EntitySet="Property" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

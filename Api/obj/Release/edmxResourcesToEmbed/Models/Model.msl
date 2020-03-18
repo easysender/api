@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ApiH2HModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Bulletins">
+      <EntityTypeMapping TypeName="ApiH2HModel.Bulletins">
+        <MappingFragment StoreEntitySet="Bulletins">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="namesId" ColumnName="namesId" />
+          <ScalarProperty Name="NumeroContoCorrente" ColumnName="NumeroContoCorrente" />
+          <ScalarProperty Name="IntestatoA" ColumnName="IntestatoA" />
+          <ScalarProperty Name="FormatoStampa" ColumnName="FormatoStampa" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="AdditionalInfo" ColumnName="AdditionalInfo" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="CodiceCliente" ColumnName="CodiceCliente" />
+          <ScalarProperty Name="ImportoEuro" ColumnName="ImportoEuro" />
+          <ScalarProperty Name="EseguitoDaNominativo" ColumnName="EseguitoDaNominativo" />
+          <ScalarProperty Name="EseguitoDaIndirizzo" ColumnName="EseguitoDaIndirizzo" />
+          <ScalarProperty Name="EseguitoDaCAP" ColumnName="EseguitoDaCAP" />
+          <ScalarProperty Name="EseguitoDaLocalita" ColumnName="EseguitoDaLocalita" />
+          <ScalarProperty Name="Causale" ColumnName="Causale" />
+          <ScalarProperty Name="BulletinType" ColumnName="BulletinType" />
+          <ScalarProperty Name="namesListsId" ColumnName="namesListsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm">
+      <EntityTypeMapping TypeName="ApiH2HModel.Dm">
+        <MappingFragment StoreEntitySet="Dm">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="haveCreativity" ColumnName="haveCreativity" />
+          <ScalarProperty Name="recipientsType" ColumnName="recipientsType" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="numberOfNames" ColumnName="numberOfNames" />
+          <ScalarProperty Name="netPrice" ColumnName="netPrice" />
+          <ScalarProperty Name="vatPrice" ColumnName="vatPrice" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+          <ScalarProperty Name="sessionUser" ColumnName="sessionUser" />
+          <ScalarProperty Name="paymentMethod" ColumnName="paymentMethod" />
+          <ScalarProperty Name="complete" ColumnName="complete" />
+          <ScalarProperty Name="paid" ColumnName="paid" />
+          <ScalarProperty Name="userParentId" ColumnName="userParentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DmConfigurations">
+      <EntityTypeMapping TypeName="ApiH2HModel.DmConfigurations">
+        <MappingFragment StoreEntitySet="DmConfigurations">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="dmId" ColumnName="dmId" />
+          <ScalarProperty Name="DiCosaSiOccupaLAzienda" ColumnName="DiCosaSiOccupaLAzienda" />
+          <ScalarProperty Name="ObiettivoPrincipale" ColumnName="ObiettivoPrincipale" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="ElementiPrincipali" ColumnName="ElementiPrincipali" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="sessionUser" ColumnName="sessionUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Listini">
+      <EntityTypeMapping TypeName="ApiH2HModel.Listini">
+        <MappingFragment StoreEntitySet="Listini">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="creativita" ColumnName="creativita" />
+          <ScalarProperty Name="distrubuzione" ColumnName="distrubuzione" />
+          <ScalarProperty Name="liste" ColumnName="liste" />
+          <ScalarProperty Name="stampa500" ColumnName="stampa500" />
+          <ScalarProperty Name="stampa1000" ColumnName="stampa1000" />
+          <ScalarProperty Name="stampa2000" ColumnName="stampa2000" />
+          <ScalarProperty Name="stampa3000" ColumnName="stampa3000" />
+          <ScalarProperty Name="stampa4000" ColumnName="stampa4000" />
+          <ScalarProperty Name="stampa5000" ColumnName="stampa5000" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lists">
+      <EntityTypeMapping TypeName="ApiH2HModel.Lists">
+        <MappingFragment StoreEntitySet="Lists">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="temporary" ColumnName="temporary" />
+          <ScalarProperty Name="userParentId" ColumnName="userParentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NamesDm">
+      <EntityTypeMapping TypeName="ApiH2HModel.NamesDm">
+        <MappingFragment StoreEntitySet="NamesDm">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="businessName" ColumnName="businessName" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="complementNames" ColumnName="complementNames" />
+          <ScalarProperty Name="complementAddress" ColumnName="complementAddress" />
+          <ScalarProperty Name="dug" ColumnName="dug" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="houseNumber" ColumnName="houseNumber" />
+          <ScalarProperty Name="cap" ColumnName="cap" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="dmId" ColumnName="dmId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notifications">
+      <EntityTypeMapping TypeName="ApiH2HModel.Notifications">
+        <MappingFragment StoreEntitySet="Notifications">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="usersId" ColumnName="usersId" />
+          <ScalarProperty Name="notificationType" ColumnName="notificationType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="operationFeatures">
+      <EntityTypeMapping TypeName="ApiH2HModel.operationFeatures">
+        <MappingFragment StoreEntitySet="operationFeatures">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="operationId" ColumnName="operationId" />
+          <ScalarProperty Name="featureType" ColumnName="featureType" />
+          <ScalarProperty Name="featureValue" ColumnName="featureValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Operations">
+      <EntityTypeMapping TypeName="ApiH2HModel.Operations">
+        <MappingFragment StoreEntitySet="Operations">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="operationType" ColumnName="operationType" />
+          <ScalarProperty Name="demoOperation" ColumnName="demoOperation" />
+          <ScalarProperty Name="complete" ColumnName="complete" />
+          <ScalarProperty Name="userParentId" ColumnName="userParentId" />
+          <ScalarProperty Name="areaTestOperation" ColumnName="areaTestOperation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Property">
+      <EntityTypeMapping TypeName="ApiH2HModel.Property">
+        <MappingFragment StoreEntitySet="Property">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Senders">
+      <EntityTypeMapping TypeName="ApiH2HModel.Senders">
+        <MappingFragment StoreEntitySet="Senders">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="businessName" ColumnName="businessName" />
+          <ScalarProperty Name="dug" ColumnName="dug" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="houseNumber" ColumnName="houseNumber" />
+          <ScalarProperty Name="cap" ColumnName="cap" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="operationId" ColumnName="operationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SendersUsers">
+      <EntityTypeMapping TypeName="ApiH2HModel.SendersUsers">
+        <MappingFragment StoreEntitySet="SendersUsers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="businessName" ColumnName="businessName" />
+          <ScalarProperty Name="dug" ColumnName="dug" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="houseNumber" ColumnName="houseNumber" />
+          <ScalarProperty Name="cap" ColumnName="cap" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="userParentId" ColumnName="userParentId" />
+          <ScalarProperty Name="temporary" ColumnName="temporary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SmsLists">
+      <EntityTypeMapping TypeName="ApiH2HModel.SmsLists">
+        <MappingFragment StoreEntitySet="SmsLists">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valueMin" ColumnName="valueMin" />
+          <ScalarProperty Name="valueMax" ColumnName="valueMax" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SmsUsers">
+      <EntityTypeMapping TypeName="ApiH2HModel.SmsUsers">
+        <MappingFragment StoreEntitySet="SmsUsers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="errcode" ColumnName="errcode" />
+          <ScalarProperty Name="extrainfo" ColumnName="extrainfo" />
+          <ScalarProperty Name="targetcode" ColumnName="targetcode" />
+          <ScalarProperty Name="dlr_ok" ColumnName="dlr_ok" />
+          <ScalarProperty Name="dlr_ko" ColumnName="dlr_ko" />
+          <ScalarProperty Name="dlr_wait" ColumnName="dlr_wait" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="sender" ColumnName="sender" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="upperlimit" ColumnName="upperlimit" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="paid" ColumnName="paid" />
+          <ScalarProperty Name="paymentMethod" ColumnName="paymentMethod" />
+          <ScalarProperty Name="planned" ColumnName="planned" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="vat" ColumnName="vat" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="userParentId" ColumnName="userParentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TemporaryValidateTable">
+      <EntityTypeMapping TypeName="ApiH2HModel.TemporaryValidateTable">
+        <MappingFragment StoreEntitySet="TemporaryValidateTable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sessionId" ColumnName="sessionId" />
+          <ScalarProperty Name="valid" ColumnName="valid" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="totalNames" ColumnName="totalNames" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DmProducts">
+      <EntityTypeMapping TypeName="ApiH2HModel.DmProducts">
+        <MappingFragment StoreEntitySet="DmProducts">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="productDescription" ColumnName="productDescription" />
+          <ScalarProperty Name="productDetails" ColumnName="productDetails" />
+          <ScalarProperty Name="active" ColumnName="active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AddressBookUsers">
+      <EntityTypeMapping TypeName="ApiH2HModel.AddressBookUsers">
+        <MappingFragment StoreEntitySet="AddressBookUsers">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConfigurationPecUsers">
+      <EntityTypeMapping TypeName="ApiH2HModel.ConfigurationPecUsers">
+        <MappingFragment StoreEntitySet="ConfigurationPecUsers">
+          <ScalarProperty Name="pecTypeId" ColumnName="pecTypeId" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PecEmailSend">
+      <EntityTypeMapping TypeName="ApiH2HModel.PecEmailSend">
+        <MappingFragment StoreEntitySet="PecEmailSend">
+          <ScalarProperty Name="attachmentName" ColumnName="attachmentName" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="PecTypeId" ColumnName="PecTypeId" />
+          <ScalarProperty Name="attachment" ColumnName="attachment" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="object" ColumnName="object" />
+          <ScalarProperty Name="ccEmail" ColumnName="ccEmail" />
+          <ScalarProperty Name="toEmail" ColumnName="toEmail" />
+          <ScalarProperty Name="fromEmail" ColumnName="fromEmail" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PecType">
+      <EntityTypeMapping TypeName="ApiH2HModel.PecType">
+        <MappingFragment StoreEntitySet="PecType">
+          <ScalarProperty Name="port" ColumnName="port" />
+          <ScalarProperty Name="smtp" ColumnName="smtp" />
+          <ScalarProperty Name="PecName" ColumnName="PecName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ApiH2HModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="CodiceContrattoCOL" ColumnName="CodiceContrattoCOL" />
+          <ScalarProperty Name="CodiceContrattoMOL" ColumnName="CodiceContrattoMOL" />
+          <ScalarProperty Name="molCol" ColumnName="molCol" />
+          <ScalarProperty Name="areaTestUser" ColumnName="areaTestUser" />
+          <ScalarProperty Name="pwdPosteAreaTest" ColumnName="pwdPosteAreaTest" />
+          <ScalarProperty Name="usernamePosteAreaTest" ColumnName="usernamePosteAreaTest" />
+          <ScalarProperty Name="sendersId" ColumnName="sendersId" />
+          <ScalarProperty Name="parentId" ColumnName="parentId" />
+          <ScalarProperty Name="demoUser" ColumnName="demoUser" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="cap" ColumnName="cap" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="baseUrl" ColumnName="baseUrl" />
+          <ScalarProperty Name="businessName" ColumnName="businessName" />
+          <ScalarProperty Name="guidUser" ColumnName="guidUser" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="userType" ColumnName="userType" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="porpertyId" ColumnName="porpertyId" />
+          <ScalarProperty Name="pwdPoste" ColumnName="pwdPoste" />
+          <ScalarProperty Name="usernamePoste" ColumnName="usernamePoste" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NamesLists">
+      <EntityTypeMapping TypeName="ApiH2HModel.NamesLists">
+        <MappingFragment StoreEntitySet="NamesLists">
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="fiscalCode" ColumnName="fiscalCode" />
+          <ScalarProperty Name="fileName" ColumnName="fileName" />
+          <ScalarProperty Name="listId" ColumnName="listId" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="cap" ColumnName="cap" />
+          <ScalarProperty Name="houseNumber" ColumnName="houseNumber" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="dug" ColumnName="dug" />
+          <ScalarProperty Name="complementAddress" ColumnName="complementAddress" />
+          <ScalarProperty Name="complementNames" ColumnName="complementNames" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="businessName" ColumnName="businessName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Names">
+      <EntityTypeMapping TypeName="ApiH2HModel.Names">
+        <MappingFragment StoreEntitySet="Names">
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="fiscalCode" ColumnName="fiscalCode" />
+          <ScalarProperty Name="reSendGuid" ColumnName="reSendGuid" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="ricevutaRitorno" ColumnName="ricevutaRitorno" />
+          <ScalarProperty Name="fronteRetro" ColumnName="fronteRetro" />
+          <ScalarProperty Name="tipoStampa" ColumnName="tipoStampa" />
+          <ScalarProperty Name="guidUser" ColumnName="guidUser" />
+          <ScalarProperty Name="stato" ColumnName="stato" />
+          <ScalarProperty Name="consegnatoDate" ColumnName="consegnatoDate" />
+          <ScalarProperty Name="presaInCaricoDate" ColumnName="presaInCaricoDate" />
+          <ScalarProperty Name="fileName" ColumnName="fileName" />
+          <ScalarProperty Name="attachedFile" ColumnName="attachedFile" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+          <ScalarProperty Name="vatPrice" ColumnName="vatPrice" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="requestId" ColumnName="requestId" />
+          <ScalarProperty Name="operationId" ColumnName="operationId" />
+          <ScalarProperty Name="valid" ColumnName="valid" />
+          <ScalarProperty Name="currentState" ColumnName="currentState" />
+          <ScalarProperty Name="insertDate" ColumnName="insertDate" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="cap" ColumnName="cap" />
+          <ScalarProperty Name="houseNumber" ColumnName="houseNumber" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="dug" ColumnName="dug" />
+          <ScalarProperty Name="complementAddress" ColumnName="complementAddress" />
+          <ScalarProperty Name="complementNames" ColumnName="complementNames" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="businessName" ColumnName="businessName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

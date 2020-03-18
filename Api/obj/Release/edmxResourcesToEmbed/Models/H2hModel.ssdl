@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="H2HModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="H2HModelStoreContainer">
+    <EntitySet Name="Accessi" EntityType="H2HModel.Store.Accessi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AnagraficaUsers" EntityType="H2HModel.Store.AnagraficaUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CategorieProdotti" EntityType="H2HModel.Store.CategorieProdotti" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CorrezioneCap" EntityType="H2HModel.Store.CorrezioneCap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DestinatariLista" EntityType="H2HModel.Store.DestinatariLista" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FileDestinatari" EntityType="H2HModel.Store.FileDestinatari" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FormElementiAggiuntivi" EntityType="H2HModel.Store.FormElementiAggiuntivi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ListeDestinatari" EntityType="H2HModel.Store.ListeDestinatari" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Mittenti" EntityType="H2HModel.Store.Mittenti" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Nominativi" EntityType="H2HModel.Store.Nominativi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Operazioni" EntityType="H2HModel.Store.Operazioni" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OperazioniStatoNominativi" EntityType="H2HModel.Store.OperazioniStatoNominativi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Proprieta" EntityType="H2HModel.Store.Proprieta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SettingUsers" EntityType="H2HModel.Store.SettingUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StatoNominativi" EntityType="H2HModel.Store.StatoNominativi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StatoOperazioneGenerale" EntityType="H2HModel.Store.StatoOperazioneGenerale" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoUtente" EntityType="H2HModel.Store.TipoUtente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UploadedFiles" EntityType="H2HModel.Store.UploadedFiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="H2HModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DestinatariProvvisori" EntityType="H2HModel.Store.DestinatariProvvisori" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StatoFile" EntityType="H2HModel.Store.StatoFile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Logs" EntityType="H2HModel.Store.Logs" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AnagraficaUsers_AnagraficaUsers" Association="H2HModel.Store.FK_AnagraficaUsers_AnagraficaUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AnagraficaUsers" EntitySet="AnagraficaUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DestinatariLista_ListeDestinatari" Association="H2HModel.Store.FK_DestinatariLista_ListeDestinatari">
+      <End Role="ListeDestinatari" EntitySet="ListeDestinatari" />
+      <End Role="DestinatariLista" EntitySet="DestinatariLista" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nominativi_Operazioni" Association="H2HModel.Store.FK_Nominativi_Operazioni">
+      <End Role="Operazioni" EntitySet="Operazioni" />
+      <End Role="Nominativi" EntitySet="Nominativi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nominativi_UploadedFiles" Association="H2HModel.Store.FK_Nominativi_UploadedFiles">
+      <End Role="UploadedFiles" EntitySet="UploadedFiles" />
+      <End Role="Nominativi" EntitySet="Nominativi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OperazioniStatoNominativi_Nominativi" Association="H2HModel.Store.FK_OperazioniStatoNominativi_Nominativi">
+      <End Role="Nominativi" EntitySet="Nominativi" />
+      <End Role="OperazioniStatoNominativi" EntitySet="OperazioniStatoNominativi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Operazioni_StatoOperazioneGenerale" Association="H2HModel.Store.FK_Operazioni_StatoOperazioneGenerale">
+      <End Role="StatoOperazioneGenerale" EntitySet="StatoOperazioneGenerale" />
+      <End Role="Operazioni" EntitySet="Operazioni" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Operazioni_UploadedFiles" Association="H2HModel.Store.FK_Operazioni_UploadedFiles">
+      <End Role="UploadedFiles" EntitySet="UploadedFiles" />
+      <End Role="Operazioni" EntitySet="Operazioni" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OperazioniStatoNominativi_StatoNominativi" Association="H2HModel.Store.FK_OperazioniStatoNominativi_StatoNominativi">
+      <End Role="StatoNominativi" EntitySet="StatoNominativi" />
+      <End Role="OperazioniStatoNominativi" EntitySet="OperazioniStatoNominativi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatoOperazioneGenerale_StatoOperazioneGenerale" Association="H2HModel.Store.FK_StatoOperazioneGenerale_StatoOperazioneGenerale">
+      <End Role="StatoOperazioneGenerale" EntitySet="StatoOperazioneGenerale" />
+      <End Role="StatoOperazioneGenerale1" EntitySet="StatoOperazioneGenerale" />
+    </AssociationSet>
+    <AssociationSet Name="TipoUtenteUsers" Association="H2HModel.Store.TipoUtenteUsers">
+      <End Role="TipoUtente" EntitySet="TipoUtente" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="CategorieProdottiOperazioni" Association="H2HModel.Store.CategorieProdottiOperazioni">
+      <End Role="CategorieProdotti" EntitySet="CategorieProdotti" />
+      <End Role="Operazioni" EntitySet="Operazioni" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Accessi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ip" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="LocationAddress" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IdProprieta" Type="int" Nullable="true" />
+    <Property Name="IdCliente" Type="int" Nullable="true" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+    <Property Name="Data" Type="datetime" Nullable="true" />
+    <Property Name="Ora" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AnagraficaUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Cognome" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Indirizzo" Type="nvarchar" Nullable="false" MaxLength="450" />
+    <Property Name="Telefono" Type="nvarchar" Nullable="false" MaxLength="350" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="450" />
+    <Property Name="RagioneSociale" Type="nvarchar" Nullable="false" MaxLength="450" />
+    <Property Name="PartitaIva" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Cap" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Stato" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Provincia" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Citta" Type="nvarchar" Nullable="false" MaxLength="450" />
+  </EntityType>
+  <EntityType Name="CategorieProdotti">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Categoria" Type="nvarchar" Nullable="true" MaxLength="250" />
+    <Property Name="Padre" Type="int" Nullable="true" />
+    <Property Name="Posizione" Type="int" Nullable="true" />
+    <Property Name="Visibile" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="CorrezioneCap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cap" Type="nvarchar" Nullable="true" MaxLength="5" />
+    <Property Name="SiglaProvincia" Type="nvarchar" Nullable="true" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="DestinatariLista">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Cognome" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Indirizzo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Cap" Type="nvarchar" Nullable="true" MaxLength="5" />
+    <Property Name="Citta" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Provincia" Type="nvarchar" Nullable="true" MaxLength="2" />
+    <Property Name="Stato" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+    <Property Name="RagioneSociale" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IdProprieta" Type="int" Nullable="true" />
+    <Property Name="IdLista" Type="int" Nullable="true" />
+    <Property Name="CodiceFiscale" Type="nvarchar" Nullable="true" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="FileDestinatari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDestinatarioLista" Type="int" Nullable="true" />
+    <Property Name="NomeFile" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="sessionOperazione" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+    <Property Name="IdProprieta" Type="int" Nullable="true" />
+    <Property Name="PathFile" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Stato" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="FormElementiAggiuntivi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProdotto" Type="int" Nullable="true" />
+    <Property Name="NomeForm" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Visibile" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="ListeDestinatari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeLista" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Attiva" Type="bit" Nullable="true" />
+    <Property Name="DataCreazione" Type="datetime" Nullable="true" />
+    <Property Name="IdProprieta" Type="int" Nullable="true" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Mittenti">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Cognome" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Indirizzo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Cap" Type="nvarchar" Nullable="true" MaxLength="5" />
+    <Property Name="Citta" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Provincia" Type="nvarchar" Nullable="true" MaxLength="2" />
+    <Property Name="Stato" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+    <Property Name="RagioneSociale" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IdProprieta" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Nominativi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" Nullable="true" MaxLength="450" />
+    <Property Name="Cognome" Type="nvarchar" Nullable="true" MaxLength="450" />
+    <Property Name="Indirizzo" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Cap" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Citta" Type="nvarchar" Nullable="true" MaxLength="150" />
+    <Property Name="Provincia" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Stato" Type="nvarchar" Nullable="true" MaxLength="150" />
+    <Property Name="IdFile" Type="int" Nullable="true" />
+    <Property Name="Categoria" Type="int" Nullable="true" />
+    <Property Name="DataInserimento" Type="datetime" Nullable="true" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+    <Property Name="StatoCorrente" Type="int" Nullable="true" />
+    <Property Name="Valido" Type="bit" Nullable="true" />
+    <Property Name="IdOperazione" Type="int" Nullable="true" />
+    <Property Name="IdTelegramma" Type="nvarchar" Nullable="true" MaxLength="350" />
+    <Property Name="Testo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ErroreMessage" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IdLista" Type="int" Nullable="true" />
+    <Property Name="IdDestinatario" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Operazioni">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFile" Type="int" Nullable="false" />
+    <Property Name="Categoria" Type="int" Nullable="false" />
+    <Property Name="IdRequest" Type="nvarchar" Nullable="false" MaxLength="350" />
+    <Property Name="StatoOperazioneGenerale" Type="int" Nullable="false" />
+    <Property Name="CostoSpedizione" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="CostoStampa" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="CostoIva" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="GuidMessage" Type="nvarchar" Nullable="false" MaxLength="350" />
+    <Property Name="DataRichiesta" Type="datetime" Nullable="false" />
+    <Property Name="IdOrder" Type="nvarchar" Nullable="false" MaxLength="350" />
+    <Property Name="IdMittente" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IdProprieta" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OperazioniStatoNominativi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stato" Type="int" Nullable="true" />
+    <Property Name="Nominativo" Type="int" Nullable="true" />
+    <Property Name="DataOperazione" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Proprieta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GuidProprieta" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NomeProprieta" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Logo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Indirizzo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telefono" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Link" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Citta" Type="nvarchar" Nullable="false" MaxLength="350" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="pwd" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="350" />
+  </EntityType>
+  <EntityType Name="SettingUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="StatoNominativi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="StatoNominativo" Type="nvarchar" Nullable="true" MaxLength="250" />
+    <Property Name="Codice" Type="nvarchar" Nullable="true" MaxLength="250" />
+    <Property Name="DescrizioneCodice" Type="nvarchar" Nullable="true" MaxLength="450" />
+    <Property Name="TitoloCodice" Type="nvarchar" Nullable="true" MaxLength="250" />
+    <Property Name="Visibile" Type="bit" Nullable="true" />
+    <Property Name="InfoStato" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="StatoOperazioneGenerale">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Stato" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="InfoStato" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TipologiaStato" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="VisibileFiltro" Type="bit" Nullable="false" />
+    <Property Name="StatoPerUtente" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoUtente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoUtente1" Type="nvarchar" Nullable="true" MaxLength="250" />
+    <Property Name="CreazioneUtenti" Type="bit" Nullable="true" />
+    <Property Name="InvioRLT" Type="bit" Nullable="true" />
+    <Property Name="VisualizzazioneRTL" Type="bit" Nullable="true" />
+    <Property Name="VisualizzazioneStoricoRTL" Type="bit" Nullable="true" />
+    <Property Name="CreazioneMittenti" Type="bit" Nullable="true" />
+    <Property Name="CreazioneListe" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="UploadedFiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeFile" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="PathFile" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+    <Property Name="DataInserimento" Type="datetime" Nullable="true" />
+    <Property Name="Categoria" Type="int" Nullable="true" />
+    <Property Name="CostoSpedizione" Type="decimal" Nullable="true" Precision="10" Scale="2" />
+    <Property Name="Stato" Type="int" Nullable="true" />
+    <Property Name="CostoStampa" Type="decimal" Nullable="true" Precision="10" Scale="2" />
+    <Property Name="CostoIva" Type="decimal" Nullable="true" Precision="10" Scale="2" />
+    <Property Name="NumeroFileCreati" Type="int" Nullable="true" />
+    <Property Name="NumeroFileCorretti" Type="int" Nullable="true" />
+    <Property Name="NumeroFileErrati" Type="int" Nullable="true" />
+    <Property Name="IdRequest" Type="nvarchar" Nullable="true" MaxLength="550" />
+    <Property Name="IdProprieta" Type="int" Nullable="true" />
+    <Property Name="Testo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Template" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Pwd" Type="varbinary" Nullable="false" MaxLength="100" />
+    <Property Name="GuidCode" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TipoUtente" Type="int" Nullable="false" />
+    <Property Name="Attivo" Type="bit" Nullable="false" />
+    <Property Name="Registrato" Type="bit" Nullable="false" />
+    <Property Name="DataInserimento" Type="datetime" Nullable="false" />
+    <Property Name="IdPadre" Type="int" Nullable="false" />
+    <Property Name="IdProprieta" Type="int" Nullable="false" />
+    <Property Name="Mittenti" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DestinatariProvvisori">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDestinatario" Type="int" Nullable="true" />
+    <Property Name="sessionOperazione" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IdUser" Type="int" Nullable="true" />
+    <Property Name="IdProprieta" Type="int" Nullable="true" />
+    <Property Name="variables" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="valori" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="StatoFile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatoFile1" Type="nvarchar" Nullable="true" MaxLength="350" />
+  </EntityType>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProprieta" Type="int" Nullable="false" />
+    <Property Name="TipoProdotto" Type="int" Nullable="false" />
+    <Property Name="IdRequest" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AnagraficaUsers_AnagraficaUsers">
+    <End Role="Users" Type="H2HModel.Store.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnagraficaUsers" Type="H2HModel.Store.AnagraficaUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AnagraficaUsers">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DestinatariLista_ListeDestinatari">
+    <End Role="ListeDestinatari" Type="H2HModel.Store.ListeDestinatari" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DestinatariLista" Type="H2HModel.Store.DestinatariLista" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListeDestinatari">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DestinatariLista">
+        <PropertyRef Name="IdLista" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nominativi_Operazioni">
+    <End Role="Operazioni" Type="H2HModel.Store.Operazioni" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Nominativi" Type="H2HModel.Store.Nominativi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operazioni">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Nominativi">
+        <PropertyRef Name="IdOperazione" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nominativi_UploadedFiles">
+    <End Role="UploadedFiles" Type="H2HModel.Store.UploadedFiles" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Nominativi" Type="H2HModel.Store.Nominativi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UploadedFiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Nominativi">
+        <PropertyRef Name="IdFile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OperazioniStatoNominativi_Nominativi">
+    <End Role="Nominativi" Type="H2HModel.Store.Nominativi" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OperazioniStatoNominativi" Type="H2HModel.Store.OperazioniStatoNominativi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nominativi">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OperazioniStatoNominativi">
+        <PropertyRef Name="Nominativo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Operazioni_StatoOperazioneGenerale">
+    <End Role="StatoOperazioneGenerale" Type="H2HModel.Store.StatoOperazioneGenerale" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Operazioni" Type="H2HModel.Store.Operazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatoOperazioneGenerale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operazioni">
+        <PropertyRef Name="StatoOperazioneGenerale" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Operazioni_UploadedFiles">
+    <End Role="UploadedFiles" Type="H2HModel.Store.UploadedFiles" Multiplicity="1" />
+    <End Role="Operazioni" Type="H2HModel.Store.Operazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UploadedFiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operazioni">
+        <PropertyRef Name="IdFile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OperazioniStatoNominativi_StatoNominativi">
+    <End Role="StatoNominativi" Type="H2HModel.Store.StatoNominativi" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OperazioniStatoNominativi" Type="H2HModel.Store.OperazioniStatoNominativi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatoNominativi">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OperazioniStatoNominativi">
+        <PropertyRef Name="Stato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatoOperazioneGenerale_StatoOperazioneGenerale">
+    <End Role="StatoOperazioneGenerale" Type="H2HModel.Store.StatoOperazioneGenerale" Multiplicity="1" />
+    <End Role="StatoOperazioneGenerale1" Type="H2HModel.Store.StatoOperazioneGenerale" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="StatoOperazioneGenerale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StatoOperazioneGenerale1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TipoUtenteUsers">
+    <End Role="TipoUtente" Type="H2HModel.Store.TipoUtente" Multiplicity="1" />
+    <End Role="Users" Type="H2HModel.Store.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoUtente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="TipoUtente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CategorieProdottiOperazioni">
+    <End Role="CategorieProdotti" Type="H2HModel.Store.CategorieProdotti" Multiplicity="1" />
+    <End Role="Operazioni" Type="H2HModel.Store.Operazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieProdotti">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operazioni">
+        <PropertyRef Name="Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

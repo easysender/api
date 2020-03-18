@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="H2HModelStoreContainer" CdmEntityContainer="H2HEntities">
+    <EntitySetMapping Name="Accessi">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.Accessi)">
+        <MappingFragment StoreEntitySet="Accessi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ip" ColumnName="Ip" />
+          <ScalarProperty Name="LocationAddress" ColumnName="LocationAddress" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Ora" ColumnName="Ora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnagraficaUsers">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.AnagraficaUsers)">
+        <MappingFragment StoreEntitySet="AnagraficaUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Cognome" ColumnName="Cognome" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="RagioneSociale" ColumnName="RagioneSociale" />
+          <ScalarProperty Name="PartitaIva" ColumnName="PartitaIva" />
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorieProdotti">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.CategorieProdotti)">
+        <MappingFragment StoreEntitySet="CategorieProdotti">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Padre" ColumnName="Padre" />
+          <ScalarProperty Name="Posizione" ColumnName="Posizione" />
+          <ScalarProperty Name="Visibile" ColumnName="Visibile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CorrezioneCap">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.CorrezioneCap)">
+        <MappingFragment StoreEntitySet="CorrezioneCap">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="SiglaProvincia" ColumnName="SiglaProvincia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DestinatariLista">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.DestinatariLista)">
+        <MappingFragment StoreEntitySet="DestinatariLista">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Cognome" ColumnName="Cognome" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="RagioneSociale" ColumnName="RagioneSociale" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+          <ScalarProperty Name="IdLista" ColumnName="IdLista" />
+          <ScalarProperty Name="CodiceFiscale" ColumnName="CodiceFiscale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FileDestinatari">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.FileDestinatari)">
+        <MappingFragment StoreEntitySet="FileDestinatari">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDestinatarioLista" ColumnName="IdDestinatarioLista" />
+          <ScalarProperty Name="NomeFile" ColumnName="NomeFile" />
+          <ScalarProperty Name="sessionOperazione" ColumnName="sessionOperazione" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+          <ScalarProperty Name="PathFile" ColumnName="PathFile" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormElementiAggiuntivi">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.FormElementiAggiuntivi)">
+        <MappingFragment StoreEntitySet="FormElementiAggiuntivi">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="IdProdotto" ColumnName="IdProdotto" />
+          <ScalarProperty Name="NomeForm" ColumnName="NomeForm" />
+          <ScalarProperty Name="Visibile" ColumnName="Visibile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListeDestinatari">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.ListeDestinatari)">
+        <MappingFragment StoreEntitySet="ListeDestinatari">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NomeLista" ColumnName="NomeLista" />
+          <ScalarProperty Name="Attiva" ColumnName="Attiva" />
+          <ScalarProperty Name="DataCreazione" ColumnName="DataCreazione" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mittenti">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.Mittenti)">
+        <MappingFragment StoreEntitySet="Mittenti">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Cognome" ColumnName="Cognome" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="RagioneSociale" ColumnName="RagioneSociale" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nominativi">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.Nominativi)">
+        <MappingFragment StoreEntitySet="Nominativi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Cognome" ColumnName="Cognome" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="IdFile" ColumnName="IdFile" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="DataInserimento" ColumnName="DataInserimento" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="StatoCorrente" ColumnName="StatoCorrente" />
+          <ScalarProperty Name="Valido" ColumnName="Valido" />
+          <ScalarProperty Name="IdOperazione" ColumnName="IdOperazione" />
+          <ScalarProperty Name="IdTelegramma" ColumnName="IdTelegramma" />
+          <ScalarProperty Name="Testo" ColumnName="Testo" />
+          <ScalarProperty Name="ErroreMessage" ColumnName="ErroreMessage" />
+          <ScalarProperty Name="IdLista" ColumnName="IdLista" />
+          <ScalarProperty Name="IdDestinatario" ColumnName="IdDestinatario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Operazioni">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.Operazioni)">
+        <MappingFragment StoreEntitySet="Operazioni">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdFile" ColumnName="IdFile" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="IdRequest" ColumnName="IdRequest" />
+          <ScalarProperty Name="StatoOperazioneGenerale" ColumnName="StatoOperazioneGenerale" />
+          <ScalarProperty Name="CostoSpedizione" ColumnName="CostoSpedizione" />
+          <ScalarProperty Name="CostoStampa" ColumnName="CostoStampa" />
+          <ScalarProperty Name="CostoIva" ColumnName="CostoIva" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="GuidMessage" ColumnName="GuidMessage" />
+          <ScalarProperty Name="DataRichiesta" ColumnName="DataRichiesta" />
+          <ScalarProperty Name="IdOrder" ColumnName="IdOrder" />
+          <ScalarProperty Name="IdMittente" ColumnName="IdMittente" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OperazioniStatoNominativi">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.OperazioniStatoNominativi)">
+        <MappingFragment StoreEntitySet="OperazioniStatoNominativi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="Nominativo" ColumnName="Nominativo" />
+          <ScalarProperty Name="DataOperazione" ColumnName="DataOperazione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proprieta">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.Proprieta)">
+        <MappingFragment StoreEntitySet="Proprieta">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GuidProprieta" ColumnName="GuidProprieta" />
+          <ScalarProperty Name="NomeProprieta" ColumnName="NomeProprieta" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SettingUsers">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.SettingUsers)">
+        <MappingFragment StoreEntitySet="SettingUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatoNominativi">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.StatoNominativi)">
+        <MappingFragment StoreEntitySet="StatoNominativi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StatoNominativo" ColumnName="StatoNominativo" />
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="DescrizioneCodice" ColumnName="DescrizioneCodice" />
+          <ScalarProperty Name="TitoloCodice" ColumnName="TitoloCodice" />
+          <ScalarProperty Name="Visibile" ColumnName="Visibile" />
+          <ScalarProperty Name="InfoStato" ColumnName="InfoStato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatoOperazioneGenerale">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.StatoOperazioneGenerale)">
+        <MappingFragment StoreEntitySet="StatoOperazioneGenerale">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="InfoStato" ColumnName="InfoStato" />
+          <ScalarProperty Name="TipologiaStato" ColumnName="TipologiaStato" />
+          <ScalarProperty Name="VisibileFiltro" ColumnName="VisibileFiltro" />
+          <ScalarProperty Name="StatoPerUtente" ColumnName="StatoPerUtente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoUtente">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.TipoUtente)">
+        <MappingFragment StoreEntitySet="TipoUtente">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TipoUtente1" ColumnName="TipoUtente1" />
+          <ScalarProperty Name="CreazioneUtenti" ColumnName="CreazioneUtenti" />
+          <ScalarProperty Name="InvioRLT" ColumnName="InvioRLT" />
+          <ScalarProperty Name="VisualizzazioneRTL" ColumnName="VisualizzazioneRTL" />
+          <ScalarProperty Name="VisualizzazioneStoricoRTL" ColumnName="VisualizzazioneStoricoRTL" />
+          <ScalarProperty Name="CreazioneMittenti" ColumnName="CreazioneMittenti" />
+          <ScalarProperty Name="CreazioneListe" ColumnName="CreazioneListe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UploadedFiles">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.UploadedFiles)">
+        <MappingFragment StoreEntitySet="UploadedFiles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NomeFile" ColumnName="NomeFile" />
+          <ScalarProperty Name="PathFile" ColumnName="PathFile" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="DataInserimento" ColumnName="DataInserimento" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="CostoSpedizione" ColumnName="CostoSpedizione" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="CostoStampa" ColumnName="CostoStampa" />
+          <ScalarProperty Name="CostoIva" ColumnName="CostoIva" />
+          <ScalarProperty Name="NumeroFileCreati" ColumnName="NumeroFileCreati" />
+          <ScalarProperty Name="NumeroFileCorretti" ColumnName="NumeroFileCorretti" />
+          <ScalarProperty Name="NumeroFileErrati" ColumnName="NumeroFileErrati" />
+          <ScalarProperty Name="IdRequest" ColumnName="IdRequest" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+          <ScalarProperty Name="Testo" ColumnName="Testo" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.Users)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+          <ScalarProperty Name="GuidCode" ColumnName="GuidCode" />
+          <ScalarProperty Name="TipoUtente" ColumnName="TipoUtente" />
+          <ScalarProperty Name="Attivo" ColumnName="Attivo" />
+          <ScalarProperty Name="Registrato" ColumnName="Registrato" />
+          <ScalarProperty Name="DataInserimento" ColumnName="DataInserimento" />
+          <ScalarProperty Name="IdPadre" ColumnName="IdPadre" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+          <ScalarProperty Name="Mittenti" ColumnName="Mittenti" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DestinatariProvvisori">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.DestinatariProvvisori)">
+        <MappingFragment StoreEntitySet="DestinatariProvvisori">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDestinatario" ColumnName="IdDestinatario" />
+          <ScalarProperty Name="sessionOperazione" ColumnName="sessionOperazione" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+          <ScalarProperty Name="variables" ColumnName="variables" />
+          <ScalarProperty Name="valori" ColumnName="valori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatoFile">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.StatoFile)">
+        <MappingFragment StoreEntitySet="StatoFile">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StatoFile1" ColumnName="StatoFile1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="IsTypeOf(H2HModel.Logs)">
+        <MappingFragment StoreEntitySet="Logs">
+          <ScalarProperty Name="IdRequest" ColumnName="IdRequest" />
+          <ScalarProperty Name="TipoProdotto" ColumnName="TipoProdotto" />
+          <ScalarProperty Name="IdProprieta" ColumnName="IdProprieta" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
