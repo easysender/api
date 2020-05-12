@@ -72,16 +72,43 @@ namespace Api.Controllers.Api
                             bulletin = Mapper.Map<Bulletins, BulletinsDtos>(b)
                         };
 
-                        var r = new RolController();
-                        var newNamesRol = await r.sendNames(gr, n.operationId, senderDto, n.Operations.userId);
-                        if (newNamesRol.valid)
-                            list.Add(newNamesRol);
-                        break;
+                        switch (n.Operations.operationType)
+                        {
+                            case (int)operationType.MOL:
+                                var m = new MOLController();
+                                var newNamesMol = m.sendNames(gr, n.operationId, senderDto, n.Operations.userId);
+                                if (newNamesMol.valid)
+                                    list.Add(newNamesMol);
+                                break;
+                            case (int)operationType.COL:
+                                var c = new COLController();
+                                var newNamesCol = c.sendNames(gr, n.operationId, senderDto, n.Operations.userId);
+                                if (newNamesCol.valid)
+                                    list.Add(newNamesCol);
+                                break;
+                            case (int)operationType.ROL:
+                                var r = new RolController();
+                                var newNamesRol = await r.sendNames(gr, n.operationId, senderDto, n.Operations.userId);
+                                if (newNamesRol.valid)
+                                    list.Add(newNamesRol);
+                                break;
+                        }
                     }
                     if (list.Count > 0)
+                        switch (names[0].Operations.operationType)
                         {
-                            var r = new RolController();
-                            await r.ValorizzaConfirm(list, names[0].Operations.Users.guidUser);
+                            case (int)operationType.MOL:
+                                var m = new MOLController();
+                                break;
+
+                            case (int)operationType.COL:
+                                var c = new COLController();
+                                break;
+
+                            case (int)operationType.ROL:
+                                var r = new RolController();
+                                await r.ValorizzaConfirm(list, names[0].Operations.Users.guidUser);
+                                break;
                         }
 
                 }
@@ -95,6 +122,7 @@ namespace Api.Controllers.Api
 
             return true;
         }
+
 
         private void LockUnlockNames(List<IGrouping<int, Names>>namesGrouped, bool toLock, Guid guid)
         {

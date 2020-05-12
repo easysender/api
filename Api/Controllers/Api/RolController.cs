@@ -2,6 +2,7 @@
 using Api.Models;
 using Api.ServiceRol;
 using AutoMapper;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,7 +41,7 @@ namespace Api.Controllers.Api
         }
 
         [Route("ServiceRol")]
-        [HttpGet]
+        [HttpPost]
         public static ROLServiceSoapClient getNewServiceRol(Guid guidUser)
         {
             //MULTIPLE USERS
@@ -63,6 +64,35 @@ namespace Api.Controllers.Api
                 service.ClientCredentials.UserName.Password = Users.pwdPoste;
             }
             return service;
+        }
+
+
+        [Route("UPU")]
+        [HttpGet]
+        public static string UPU(Guid guidUser)
+        {
+            //MULTIPLE USERS
+            var u = _context.Users.Where(a => a.guidUser == guidUser);
+            if (u.Count() == 0)
+                return null;
+
+            var Users = _context.Users.Where(a => a.guidUser == guidUser).SingleOrDefault(a => a.parentId == 0);
+            if (Users == null)
+                return null;
+            ROLServiceSoapClient service = new ROLServiceSoapClient();
+            if (Users.areaTestUser)
+            {
+                service.ClientCredentials.UserName.UserName = Users.usernamePosteAreaTest;
+                service.ClientCredentials.UserName.Password = Users.pwdPosteAreaTest;
+            }
+            else
+            {
+                service.ClientCredentials.UserName.UserName = Users.usernamePoste;
+                service.ClientCredentials.UserName.Password = Users.pwdPoste;
+            }
+            var n = service.RecuperaNomiNazioniUPU(CountryLanguage.Italiano);
+            var l = n.ListaNomi;
+            return JsonConvert.SerializeObject(l);
         }
 
         private static string getRequestId(Guid guid)
